@@ -844,8 +844,7 @@ BlocklyApps.getMissingRequiredBlocks = function() {
         }
       } else if (typeof test == 'function') {
         if (!blocks.some(test)) {
-          // Remove trailing underscore if present.
-          missingBlocks.push(test.name.replace(/_$/, ''));
+          missingBlocks.push(test.name);
         }
       }
     }
@@ -902,11 +901,13 @@ BlocklyApps.getTestResults = function() {
 };
 
 /**
- * Show stars based on the degree of completion and if the level is complete.
- * @param {number} testResult The number of stars to display.
+ * Show stars based on the degree of completion.
+ * @param {number} numStars The number of stars to display.
  */
-BlocklyApps.displayStars = function(testResult) {
-  document.getElementById('star' + testResult).style.display = 'block';
+BlocklyApps.displayStars = function(numStars) {
+  if (numStars != 0) {
+    document.getElementById('star' + numStars).style.display = 'block';
+  }
 };
 
 /**
@@ -934,11 +935,8 @@ BlocklyApps.setErrorFeedback = function(feedbackType) {
       document.getElementById('levelIncompleteError').style.display = 'list-item';
       break;
 
-    // For completing level, user gets at least one star.
-    case BlocklyApps.TestResults.OTHER_1_STAR_FAIL:
-      document.getElementById('star1').style.display = 'block';
-      break;
-    // One star for failing to use required blocks.
+    // If blocks are missing, the number of stars depends on whethere the
+    // level was completed (1 star) or not (no stars).
     case BlocklyApps.TestResults.MISSING_BLOCK_FAIL:
       // For each error type in the array, display the corresponding error.
       var missingBlocks = BlocklyApps.getMissingRequiredBlocks();
@@ -965,7 +963,12 @@ BlocklyApps.setErrorFeedback = function(feedbackType) {
           }
         }
       }
-      BlocklyApps.displayStars(1);
+      BlocklyApps.displayStars(BlocklyApps.levelComplete ? 1 : 0);
+      break;
+
+    // For completing level, user gets at least one star.
+    case BlocklyApps.TestResults.OTHER_1_STAR_FAIL:
+      document.getElementById('star1').style.display = 'block';
       break;
 
     // Two stars for using too many blocks.
