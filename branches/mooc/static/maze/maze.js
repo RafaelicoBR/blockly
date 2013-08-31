@@ -549,7 +549,6 @@ Maze.init = function() {
   }
 
   BlocklyApps.reset(true);
-  Blockly.addChangeListener(function() {BlocklyApps.updateCapacity()});
 };
 
 window.addEventListener('load', Maze.init);

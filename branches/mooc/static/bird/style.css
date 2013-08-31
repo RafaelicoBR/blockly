@@ -15,45 +15,6 @@
 #visualization {
   position: relative;
 }
-#hintBubble {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  border-radius: 15px;
-  background-color: rgba(64,64,64,0.7);
-  width: 380px;
-}
-html[dir=rtl] #hintBubble {
-  left: auto;
-  right: 10px;
-}
-#hint {
-  color: #fff;
-  padding: 5px 1em;
-  font-size: large;
-}
-#capacityBubble {
-  position: absolute;
-  margin-top: -0.5em;
-  left: 10px;
-  top: 425px;
-  width: 380px;
-}
-html[dir=rtl] #capacityBubble {
-  left: auto;
-  right: 10px;
-}
-#capacity {
-  display: none;
-  color: #fff;
-  padding: 5px 1em;
-  border-radius: 15px;
-  background-color: rgba(64,64,64,0.7);
-  font-size: large;
-}
-#capacityNumber {
-  font-weight: bold;
-}
 #containerCode {
   direction: ltr;
   font-size: large;

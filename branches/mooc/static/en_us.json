@@ -1,7 +1,7 @@
 {
     "@metadata": {
         "author": "Ellen Spertus <ellen.spertus@gmail.com>",
-        "lastupdated": "2013-08-29 16:02:47.889732",
+        "lastupdated": "2013-08-30 16:12:16.729374",
         "locale": "en_us",
         "messagedocumentation" : "qqq"
     },
@@ -61,9 +61,6 @@
     "Maze.ifTooltip": "If there is a path in the specified direction, then do some actions.",
     "Maze.ifelseTooltip": "If there is a path in the specified direction, then do the first block of actions. Otherwise, do the second block of actions.",
     "Maze.whileTooltip": "Repeat the enclosed actions until finish point is reached.",
-    "Maze.capacity0": "You have<x id='START_SPAN'/>0<x id='END_SPAN'/> blocks left.",
-    "Maze.capacity1": "You have <x id='START_SPAN'/>1<x id='END_SPAN'/> block left.",
-    "Maze.capacity2": "You have <x id='START_SPAN'/>%1<x id='END_SPAN'/> blocks left.",
     "Maze.nextLevel": "Congratulations! You have completed this level.",
     "Maze.finalLevel": "Congratulations! You have solved the final level.",
     "Maze.oneTopBlock": "On this level, you need to stack together all of the blocks in the white workspace.",

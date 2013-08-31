@@ -25,9 +25,6 @@
 "Maze.instructions8" : "'if' bloke bat baino gehiago erabili ditzakezu.",
 "Maze.instructions9" : "If-else blokeek gauza bat edo bestea egingo dute.",
 "Maze.instructions10" : "Labirinto zail honi irtenbidea aurkitu diezaiokezu? Saia zaitez ezker-pareta jarraitzen.",
-"Maze.capacity0" : "0 bloke geratzen dira.",
-"Maze.capacity1" : "Bloke 1 geratzen da.",
-"Maze.capacity2" : "%1 bloke geratzen dira.",
 "Maze.runProgram" : "Programa exekutatu",
 "Maze.resetProgram" : "Berriz hasi",
 "Maze.nextLevel" : "Zorionak! Prest al zaude %1 mailara pasatzeko?",
@@ -40,4 +37,3 @@
 "Apps.hashError": "Barkatu, '%1' barcinak Blocky fitxategi hau lapurtu du ere.",
 "Apps.xmlError": "Ezin izan da zure fitxategia kargatu.  Agian Blockly-ren beste bertsio batekin sortua izan zen?"
 }
-

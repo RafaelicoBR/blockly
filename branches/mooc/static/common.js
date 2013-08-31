@@ -753,29 +753,6 @@ BlocklyApps.TestResults = {
   ALL_PASS: 0                // 3 stars.
 };
 
-/**
- * Updates the document's 'capacity' element's innerHTML with a message
- * indicating how many more blocks are permitted.  The capacity
- * is retrieved from Blockly.mainWorkspace.remainingCapacity().
- */
-BlocklyApps.updateCapacity = function() {
-  var cap = Blockly.mainWorkspace.remainingCapacity();
-  var p = document.getElementById('capacity');
-  if (cap == Infinity) {
-    p.style.display = 'none';
-  } else {
-    p.style.display = 'inline';
-    if (cap == 0) {
-      p.innerHTML = BlocklyApps.getMsg('capacity0');
-    } else if (cap == 1) {
-      p.innerHTML = BlocklyApps.getMsg('capacity1');
-    } else {
-      cap = Number(cap);
-      p.innerHTML = BlocklyApps.getMsg('capacity2').replace('%1', cap);
-    }
-  }
-};
-
 // Methods for determining and displaying feedback.
 
 /**

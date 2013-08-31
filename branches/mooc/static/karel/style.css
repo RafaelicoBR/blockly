@@ -59,25 +59,6 @@ html[dir="RTL"] .farSide {
   padding: 5px 1em;
   font-size: large;
 }
-#capacity {
-  display: none;
-  color: #fff;
-  padding: 5px 1em;
-  border-radius: 15px;
-  background-color: rgba(64,64,64,0.7);
-  font-size: large;
-}
-#capacityBubble {
-  display: none;
-  position: absolute;
-  margin-top: -0.5em;
-  left: 10px;
-  top: 425px;
-  width: 380px;
-}
-#capacityNumber {
-  font-weight: bold;
-}
 #hintBubble {
   position: absolute;
   left: 10px;
@@ -142,10 +123,6 @@ html[dir="RTL"] .farSide {
   background-color: #000;
   opacity: 0.3;
 }
-html[dir=rtl] #capacity {
-  float: left;
-}
-
 
 /* 'Look' icon */
 #look>path {

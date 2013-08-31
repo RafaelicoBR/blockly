@@ -424,7 +424,6 @@ Maze.init = function() {
   BlocklyApps.loadBlocks(xml);
 
   Maze.reset(true);
-  Blockly.addChangeListener(function() {BlocklyApps.updateCapacity()});
 };
 
 window.addEventListener('load', Maze.init);
