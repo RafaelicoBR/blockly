@@ -55,7 +55,7 @@ https://blockly.googlecode.com/svn/wiki/control-for-each.png
 
 = Loop Termination Blocks =
 
-Most loops run until the terminating condition (in the case of  *repeat* blocks*) is met or until all values have been taken by the loop variable (in the case of *count with* and *for each* loops).  Two rarely needed but occasionally useful blocks provide additional means for controlling loop behavior.  Although the below examples are for *for each* loops, they can be used with any type of loop.
+Most loops run until the terminating condition (in the case of  *repeat* blocks) is met or until all values have been taken by the loop variable (in the case of *count with* and *for each* loops).  Two rarely needed but occasionally useful blocks provide additional means for controlling loop behavior.  Although the below examples are for *for each* loops, they can be used with any type of loop.
 
 == continue with next iteration ==
 
