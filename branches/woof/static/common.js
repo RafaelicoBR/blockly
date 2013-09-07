@@ -97,14 +97,14 @@ BlocklyApps.getLang = function() {
 };
 
 /**
- * User's language.  E.g. 'en'
- * @type {?string}
+ * User's language (e.g. "en").
+ * @type string=
  */
 BlocklyApps.LANG = undefined;
 
 /**
  * List of languages supported by this app.  Keys should be in ISO 639 format.
- * @type {Object}
+ * @type !Object=
  */
 BlocklyApps.LANGUAGES = undefined;
 
@@ -314,13 +314,19 @@ BlocklyApps.showDialog = function(content, origin, animate, modal, style,
   for (var name in style) {
     dialog.style[name] = style[name];
   }
-  dialog.appendChild(content);
-  content.className = content.className.replace('dialogHiddenContent', '');
-
   if (modal) {
     shadow.style.visibility = 'visible';
     shadow.style.opacity = 0.3;
+    var header = document.createElement('div');
+    header.id = 'dialogHeader';
+    dialog.appendChild(header);
+    BlocklyApps.dialogMouseDownWrapper_ =
+        Blockly.bindEvent_(header, 'mousedown', this,
+                           BlocklyApps.dialogMouseDown_);
   }
+  dialog.appendChild(content);
+  content.className = content.className.replace('dialogHiddenContent', '');
+
   function endResult() {
     dialog.style.visibility = 'visible';
     dialog.style.zIndex = 1;
@@ -338,6 +344,73 @@ BlocklyApps.showDialog = function(content, origin, animate, modal, style,
 };
 
 /**
+ * Horizontal start coordinate of dialog drag.
+ */
+BlocklyApps.dialogStartX_ = 0;
+
+/**
+ * Vertical start coordinate of dialog drag.
+ */
+BlocklyApps.dialogStartY_ = 0;
+
+/**
+ * Handle start of drag of dialog.
+ * @param {!Event} e Mouse down event.
+ * @private
+ */
+BlocklyApps.dialogMouseDown_ = function(e) {
+  BlocklyApps.dialogUnbindDragEvents_();
+  if (Blockly.isRightButton(e)) {
+    // Right-click.
+    return;
+  }
+  // Left click (or middle click).
+  // Record the starting offset between the current location and the mouse.
+  var dialog = document.getElementById('dialog');
+  BlocklyApps.dialogStartX_ = dialog.offsetLeft - e.clientX;
+  BlocklyApps.dialogStartY_ = dialog.offsetTop - e.clientY;
+
+  BlocklyApps.dialogMouseUpWrapper_ = Blockly.bindEvent_(document,
+      'mouseup', this, BlocklyApps.dialogUnbindDragEvents_);
+  BlocklyApps.dialogMouseMoveWrapper_ = Blockly.bindEvent_(document,
+      'mousemove', this, BlocklyApps.dialogMouseMove_);
+  // This event has been handled.  No need to bubble up to the document.
+  e.stopPropagation();
+};
+
+/**
+ * Drag the dialog to follow the mouse.
+ * @param {!Event} e Mouse move event.
+ * @private
+ */
+BlocklyApps.dialogMouseMove_ = function(e) {
+  var dialog = document.getElementById('dialog');
+  var dialogLeft = this.dialogStartX_ + e.clientX;
+  var dialogTop = this.dialogStartY_ + e.clientY;
+  dialogTop = Math.max(dialogTop, 0);
+  dialogTop = Math.min(dialogTop, window.innerHeight - dialog.offsetHeight);
+  dialogLeft = Math.max(dialogLeft, 0);
+  dialogLeft = Math.min(dialogLeft, window.innerWidth - dialog.offsetWidth);
+  dialog.style.left = dialogLeft + 'px';
+  dialog.style.top = dialogTop + 'px';
+};
+
+/**
+ * Stop binding to the global mouseup and mousemove events.
+ * @private
+ */
+BlocklyApps.dialogUnbindDragEvents_ = function() {
+  if (BlocklyApps.dialogMouseUpWrapper_) {
+    Blockly.unbindEvent_(BlocklyApps.dialogMouseUpWrapper_);
+    BlocklyApps.dialogMouseUpWrapper_ = null;
+  }
+  if (BlocklyApps.dialogMouseMoveWrapper_) {
+    Blockly.unbindEvent_(BlocklyApps.dialogMouseMoveWrapper_);
+    BlocklyApps.dialogMouseMoveWrapper_ = null;
+  }
+};
+
+/**
  * Hide the dialog pop-up.
  * @param {boolean} opt_animate Animate the dialog closing.  Defaults to true.
  *     Requires that origin was not null when dialog was opened.
@@ -346,6 +419,12 @@ BlocklyApps.hideDialog = function(opt_animate) {
   if (!BlocklyApps.isDialogVisible_) {
     return;
   }
+  BlocklyApps.dialogUnbindDragEvents_();
+  if (BlocklyApps.dialogMouseDownWrapper_) {
+    Blockly.unbindEvent_(BlocklyApps.dialogMouseDownWrapper_);
+    BlocklyApps.dialogMouseDownWrapper_ = null;
+  }
+
   BlocklyApps.isDialogVisible_ = false;
   BlocklyApps.dialogDispose_ && BlocklyApps.dialogDispose_();
   BlocklyApps.dialogDispose_ = null;
@@ -371,6 +450,10 @@ BlocklyApps.hideDialog = function(opt_animate) {
   }
   dialog.style.visibility = 'hidden';
   dialog.style.zIndex = -1;
+  var header = document.getElementById('dialogHeader');
+  if (header) {
+    header.parentNode.removeChild(header);
+  }
   while (dialog.firstChild) {
     var content = dialog.firstChild;
     content.className += ' dialogHiddenContent';
@@ -449,7 +532,7 @@ BlocklyApps.getBBox_ = function(element) {
  */
 BlocklyApps.storageAlert = function(message) {
   var container = document.getElementById('containerStorage');
-  container.innerHTML = '';
+  container.textContent = '';
   var lines = message.split('\n');
   for (var i = 0; i < lines.length; i++) {
     var p = document.createElement('p');
@@ -495,9 +578,7 @@ BlocklyApps.showCode = function(origin) {
   var code = Blockly.Generator.workspaceToCode('JavaScript');
   code = BlocklyApps.stripCode(code);
   var pre = document.getElementById('containerCode');
-  pre.innerHTML = '';
-  // Inject the code as a textNode, then extract with innerHTML, thus escaping.
-  pre.appendChild(document.createTextNode(code));
+  pre.textContent = code;
   if (typeof prettyPrintOne == 'function') {
     code = pre.innerHTML;
     code = prettyPrintOne(code, 'js');
@@ -551,7 +632,7 @@ BlocklyApps.stopDialogKeyDown = function() {
 /**
  * Gets the message with the given key from the document.
  * @param {string} key The key of the document element.
- * @return {string} The innerHTML of the specified element,
+ * @return {string} The textContent of the specified element,
  *     or an error message if the element was not found.
  */
 BlocklyApps.getMsg = function(key) {
@@ -562,13 +643,13 @@ BlocklyApps.getMsg = function(key) {
 /**
  * Gets the message with the given key from the document.
  * @param {string} key The key of the document element.
- * @return {string} The innerHTML of the specified element,
+ * @return {string} The textContent of the specified element,
  *     or null if the element was not found.
  */
 BlocklyApps.getMsgOrNull = function(key) {
   var element = document.getElementById(key);
   if (element) {
-    var text = element.innerHTML;
+    var text = element.textContent;
     // Convert newline sequences.
     text = text.replace(/\\n/g, '\n');
     return text;
