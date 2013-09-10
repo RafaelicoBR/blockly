@@ -4,7 +4,7 @@ This document provides what developers should know about Blockly translations.  
 
 = Introduction =
 
-Internationalization (i18n) is one of Blockly's top priorities.  See, for example, [https://neil.fraser.name/news/2013/03/16/ CS in VN].  We are proud that the [http://blockly-demo.appspot.com/apps/puzzle/index.html Puzzle application] has been translated into over 50 languages but will not be satisfied until all of Blockly has been.
+Internationalization (i18n) is one of Blockly's top priorities.  See, for example, [https://neil.fraser.name/news/2013/03/16/ CS in VN].  We are proud to have support for right-to-left and left-to-right scripts and that the [http://blockly-demo.appspot.com/static/apps/puzzle/index.html Puzzle application] has been translated into over 50 languages but will not be satisfied until all of Blockly has been.
 
 = !TranslateWiki =
 We use [http://www.translatewiki.net TranslateWiki] as our translation console and translator community.  We provide them with the following files:
@@ -17,3 +17,19 @@ Here are links to files for translating the tutorials and applications:
   * [https://code.google.com/p/blockly/source/browse/trunk/apps/qqq.json apps/qqq.json]
   * [https://code.google.com/p/blockly/source/browse/trunk/apps/en.json apps/en.json]
   * [https://code.google.com/p/blockly/source/browse/trunk/apps/de.json apps/de.json] (as one example of a language file).
+
+= Applications and Tutorials =
+
+== Soy-based translation ==
+
+The Blockly applications and tutorials (henceforth referred to as "apps") are built with "Soy", also known as [https://developers.google.com/closure/templates/ Google Closure templates], which has [https://developers.google.com/closure/templates/docs/translation translation tools].  Specifically, all messages appear in files whose name ends with the "soy" extension.   Messages used by multiple apps are defined in [https://code.google.com/p/blockly/source/browse/trunk/apps/common.soy apps/common.soy], and have the prefix "Apps."  Messages used by only a single app are defined in that app's template.soy file, such as [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/template.soy apps/maze/template.soy] and prefixed with the name of the application, such as "Maze.".
+
+Here is an example of a message definition:
+
+{{{
+{msg meaning="Maze.moveForward" 
+     desc="block text - Imperative or infinitive of a verb for a person moving 
+               (walking) in the direction he/she is facing."}
+  move forward
+{/msg}
+}}}
