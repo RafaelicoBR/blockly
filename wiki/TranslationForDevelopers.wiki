@@ -1,0 +1,19 @@
+#summary Information about translation for Blockly developers
+
+This document provides what developers should know about Blockly translations.  Translators should read [https://code.google.com/p/blockly/wiki/Translation this document] instead.
+
+= Introduction =
+
+Internationalization (i18n) is one of Blockly's top priorities.  See, for example, [https://neil.fraser.name/news/2013/03/16/ CS in VN].  We are proud that the [http://blockly-demo.appspot.com/apps/puzzle/index.html Puzzle application] has been translated into over 50 languages but will not be satisfied until all of Blockly has been.
+
+= !TranslateWiki =
+We use [http://www.translatewiki.net TranslateWiki] as our translation console and translator community.  We provide them with the following files:
+  * *qqq.json*, mapping message names to _message documentation_ (information for translators).
+  * *en.json*, mapping message names to the English-language text.  Note that we use Canadian English.
+  * *_LANG_.json*, mapping message names to the appropriate language text.  Messages that have not been translated to the given language will not be present in this file.
+_LANG_ is (loosely) an [http://en.wikipedia.org/wiki/IETF_language_tag IETF language tag], such as "de" for German or "pt-br" for Brazilian Portuguese.
+
+Here are links to files for translating the tutorials and applications:
+  * [https://code.google.com/p/blockly/source/browse/trunk/apps/qqq.json apps/qqq.json]
+  * [https://code.google.com/p/blockly/source/browse/trunk/apps/en.json apps/en.json]
+  * [https://code.google.com/p/blockly/source/browse/trunk/apps/de.json apps/de.json] (as one example of a language file).
