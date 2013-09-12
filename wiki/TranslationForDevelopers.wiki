@@ -2,6 +2,8 @@
 
 This document provides what developers should know about Blockly translations.  Translators should read [https://code.google.com/p/blockly/wiki/Translation this document] instead.
 
+<wiki:toc max_depth="3" />
+
 = Introduction =
 
 Internationalization (i18n) is one of Blockly's top priorities.  See, for example, [https://neil.fraser.name/news/2013/03/16/ CS in VN].  We are proud to have support for right-to-left and left-to-right scripts and that the [http://blockly-demo.appspot.com/static/apps/puzzle/index.html Puzzle application] has been translated into over 50 languages but will not be satisfied until all of Blockly has been.
@@ -51,12 +53,16 @@ A left brace or right brace can be included in an attribute value by using doubl
 (The !TranslateWiki "Identical" tag is shrouded in mystery.  It was added to a Blockly file by a !TranslateWiki wizard, and I was told not to worry about why.)
 
 === Placement of the msg tag ===
+
+==== Messages used only once within a template ====
+
 If a message is used only once and the use is within the template, it can be defined where it is used:
 
 {{{
 <button class="notext" 
         title="{msg meaning="Apps.codeTooltip" 
-                    desc="tooltip (pop-up help) for button; pressing the button causes a program in the JavaScript computer language to be displayed, based on the program created by the user."}
+                    desc="tooltip (pop-up help) for button; pressing the button causes a program in the
+                          JavaScript computer language to be displayed, based on the program created by the user."}
                  See generated JavaScript code.
             {/msg}" 
         onclick="BlocklyApps.showCode(this);">
@@ -64,12 +70,20 @@ If a message is used only once and the use is within the template, it can be def
 </button>
 }}}
 
+
+==== Messages referenced from !JavaScript files====
 If a message is used from another file, such as maze.js or blocks.js, it must be declared within a span:
 
 {{{
-    <span id="Maze_moveForward">{msg meaning="Maze.moveForward" desc="block text - Imperative or infinitive of a verb for a person moving (walking) in the direction he/she is facing."}move forward{/msg}</span>
+    <span id="Maze_moveForward">
+      {msg meaning="Maze.moveForward" 
+           desc="block text - Imperative or infinitive of a verb for a person moving 
+               (walking) in the direction he/she is facing."}
+        move forward
+      {/msg}
+    </span>
 }}}
-By convention, the id of the span is the same as the "meaning" key but replaces periods with underscores.  The message is referenced from code through the method {{{BlocklyApps.getMsg()}}}:
+By convention, the id of the span is the same as the "meaning" key but replaces periods with underscores.  The message is referenced from code through the method {{{BlocklyApps.getMsg()}}}, as in the example below from [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/blocks.js apps/maze/blocks.js]:
 
 {{{
 Blockly.Language.maze_moveForward = {
@@ -82,9 +96,24 @@ Blockly.Language.maze_moveForward = {
 };
 }}}
 
+==== Messages used multiple times====
+If a message is used multiple times within one or multiple template files, all "msg" tags should have the same "meaning" attribute and enclosed text, but only one should have the real description as the "desc" attribute.  The others should have "IBID" (case-insensitive).
 
+If a message is used in more than one app, it should be defined within a span in [https://code.google.com/p/blockly/source/browse/trunk/apps/common.soy apps/common.soy], and its meaning should be prefixed with "Apps.".  For example, common.soy includes:
 
-<td>
-{msg meaning="Maze.helpIfElse" desc="IBID"}If-else blocks will do one thing or the other.{/msg}
-</td>
+{{{
+<span id="blocklyMessage">
+  {msg meaning="Apps.blocklyMessage" 
+         desc="The project name.  If readers of your language would know approximately how to pronounce 'Blockly', 
+               leave unchanged.  Otherwise, include a transliteration in parentheses, such as the Russian:
+               'Blockly (\u0411\u043bo\u043a\u043b\u0438)'."}
+     Blockly
+  {/msg}
+</span>
 }}}
+
+Here is a sample use from [https://code.google.com/p/blockly/source/browse/trunk/apps/turtle/template.soy apps/turtle/template.soy]:
+{{{
+<a href="../index.html">{msg meaning="Apps.blocklyMessage" desc="IBID"}Blockly{/msg}</a>
+}}}
+
