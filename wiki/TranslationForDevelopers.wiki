@@ -22,11 +22,9 @@ Here are links to files for translating the tutorials and applications:
 
 = Applications and Tutorials =
 
-== Soy-based translation ==
-
 The Blockly applications and tutorials (henceforth referred to as "apps") are built with "Soy", also known as [https://developers.google.com/closure/templates/ Google Closure templates], which has [https://developers.google.com/closure/templates/docs/translation translation tools].  Specifically, all messages appear in files whose name ends with the "soy" extension.   Messages used by multiple apps are defined in [https://code.google.com/p/blockly/source/browse/trunk/apps/common.soy apps/common.soy], and have the prefix "Apps."  Messages used by only a single app are defined in that app's template.soy file, such as [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/template.soy apps/maze/template.soy] and prefixed with the name of the application, such as "Maze.".
 
-=== The msg tag ===
+== The msg tag ==
 Here is an example of a message definition:
 
 {{{
@@ -52,9 +50,9 @@ A left brace or right brace can be included in an attribute value by using doubl
 }}}
 (The !TranslateWiki "Identical" tag is shrouded in mystery.  It was added to a Blockly file by a !TranslateWiki wizard, and I was told not to worry about why.)
 
-=== Placement of the msg tag ===
+== Placement of the msg tag ==
 
-==== Messages used only once within a template ====
+=== Messages used only once within a template ===
 
 If a message is used only once and the use is within the template, it can be defined where it is used:
 
@@ -71,17 +69,17 @@ If a message is used only once and the use is within the template, it can be def
 }}}
 
 
-==== Messages referenced from !JavaScript files====
+=== Messages referenced from !JavaScript files===
 If a message is used from another file, such as maze.js or blocks.js, it must be declared within a span:
 
 {{{
-    <span id="Maze_moveForward">
-      {msg meaning="Maze.moveForward" 
-           desc="block text - Imperative or infinitive of a verb for a person moving 
-               (walking) in the direction he/she is facing."}
-        move forward
-      {/msg}
-    </span>
+<span id="Maze_moveForward">
+  {msg meaning="Maze.moveForward" 
+       desc="block text - Imperative or infinitive of a verb for a person moving 
+           (walking) in the direction he/she is facing."}
+    move forward
+  {/msg}
+</span>
 }}}
 By convention, the id of the span is the same as the "meaning" key but replaces periods with underscores.  The message is referenced from code through the method {{{BlocklyApps.getMsg()}}}, as in the example below from [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/blocks.js apps/maze/blocks.js]:
 
@@ -96,7 +94,7 @@ Blockly.Language.maze_moveForward = {
 };
 }}}
 
-==== Messages used multiple times====
+=== Messages used multiple times===
 If a message is used multiple times within one or multiple template files, all "msg" tags should have the same "meaning" attribute and enclosed text, but only one should have the real description as the "desc" attribute.  The others should have "IBID" (case-insensitive).
 
 If a message is used in more than one app, it should be defined within a span in [https://code.google.com/p/blockly/source/browse/trunk/apps/common.soy apps/common.soy], and its meaning should be prefixed with "Apps.".  For example, common.soy includes:
@@ -117,3 +115,32 @@ Here is a sample use from [https://code.google.com/p/blockly/source/browse/trunk
 <a href="../index.html">{msg meaning="Apps.blocklyMessage" desc="IBID"}Blockly{/msg}</a>
 }}}
 
+==Build process==
+
+=== Building a single app in English ===
+
+Every app's template.soy file contains a comment near the top describing how to rebuild its English-language message file (apps/*/generated/en.js).  For example, this command appears at the top of [https://code.google.com/p/blockly/source/browse/trunk/apps/turtle/template.soy apps/turtle/template.soy]:
+
+{{{
+java -jar ../_soy/SoyToJsSrcCompiler.jar --outputPathFormat generated/en.js --srcs ../common.soy,template.soy
+}}}
+
+When run in the apps/turtle directory, this rebuilds [https://code.google.com/p/blockly/source/browse/trunk/apps/turtle/generated/en.js apps/turtle/generated/en.js].
+
+Emacs users might want to add the following to their .emacs file to automatically regenerate the appropriate en.js file whenever a template.soy file is saved:
+{{{
+(add-hook 'after-save-hook
+  (lambda ()
+    (if (string-match "^template.soy\\(<.*>\\)?$" (buffer-name))
+	(shell-command "java -jar ../_soy/SoyToJsSrcCompiler.jar --outputPathFormat generated/en.js --srcs ../common.soy,template.soy"))))
+}}}
+Of course, if you have a different path to _soy or wish to generate "en_us.js" instead of "en.js", you will need to change the command.
+
+
+=== Doing a full build ===
+
+[https://blockly.googlecode.com/svn/wiki/i18n_block_diagram.png]
+
+Before checking in code, developers should do a full i18n build by following the instructions in comments at the top of [apps/common.soy].  The above diagram shows the build process.   The first step (<font color="orange">!SoyMsgExtractor.jar</font>) extracts the messages from the template files into extracted_msgs.xlf.  
+
+The second step (<font color="magenta">xliff_to_json.py</font>) generates the "en.json" and "qqq.json" files required by <font color="blue">translatewiki</font>, as well as creating "keys.json", which is used to ???  Note that these do not change the other languages' json files, which were generated by <font color="blue">translatewiki</font>.  These files are automatically picked up by Siebrand Mazeland at translatewiki, who periodically checks in updated qqq.json and other languages' json files as blockly@translatewiki.net.
