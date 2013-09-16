@@ -14,9 +14,8 @@ Assuming your block(s) don't fit in the existing categories, create a new !JavaS
 A typical block definition looks like this:
 {{{
 Blockly.Language.text_length = {
-  category: 'Text',
-  helpUrl: 'http://www.w3schools.com/jsref/jsref_length_string.asp',
   init: function() {
+    this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
     this.setColour(160);
     this.appendValueInput('VALUE')
         .setCheck('String')
@@ -30,14 +29,13 @@ Blockly.Language.text_length = {
 http://blockly.googlecode.com/svn/wiki/text_length.png
 
   * `text_length` is the name of the block.  Since all blocks share the same namespace, it is good to use a name made up of your category (in this case `text`) followed by your block's function (in this case `length`).
-  * `category` is the text of the menu option in Blockly's main toolbar which will contain the block.  Categories are listed in the order they are loaded, so if your blocks are appearing in the wrong place, move your `<script ...>` tag higher or lower with respect to the other language definitions.
-  * `helpUrl` is the URL of the page which should open when the user right-clicks on the block and chooses help.  If this value is `null` then the menu will be greyed out.  Advanced blocks may specify a function (instead of a static string) which returns a URL string, thus allowing for dynamic help.
   * `init` is a function which defines the look and feel of the block.
 
 == Init Function ==
 
 The `init` function creates the block's shape.  In the context of this function the keyword `this` is the actual block being created.  There are several functions commonly used in an `init` function:
 
+  * [#setHelpUrl setHelpUrl]
   * [#setColour setColour]
   * [#setOutput setOutput]
   * [#setPreviousStatement setPreviousStatement]
@@ -49,6 +47,14 @@ The `init` function creates the block's shape.  In the context of this function 
   * [#setInputsInline setInputsInline]
   * [#setTooltip setTooltip]
   * [#setMutator setMutator]
+
+=== setHelpUrl ===
+
+{{{
+    this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
+}}}
+
+The URL of the page which should open when the user right-clicks on the block and chooses help.  If this value is `null` then the menu will be greyed out.  Advanced blocks may specify a function (instead of a static string) which returns a URL string, thus allowing for dynamic help.
 
 === setColour ===
 

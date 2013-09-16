@@ -43,8 +43,8 @@ Blockly.FieldColour.COLUMNS = 4;
 // Block definitions.
 Blockly.Language.draw_move_inline = {
   // Block for moving forward or backward the internal number of pixels.
-  helpUrl: 'http://www.example.com/',
   init: function() {
+    this.setHelpUrl('http://www.example.com/');
     this.setColour(160);
     this.appendDummyInput()
         .appendTitle(new Blockly.FieldDropdown(
@@ -71,7 +71,6 @@ Blockly.JavaScript.draw_move_inline = function() {
 
 Blockly.Language.draw_turn_inline_restricted = {
   // Block for turning either left or right from among a fixed set of angles.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendDummyInput()
@@ -101,7 +100,6 @@ Blockly.JavaScript.draw_turn_inline_restricted = function() {
 
 Blockly.Language.draw_turn_inline = {
   // Block for turning left or right any number of degrees.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendDummyInput()
@@ -127,9 +125,8 @@ Blockly.JavaScript.draw_turn_inline = function() {
 
 Blockly.Language.variables_get_counter = {
   // Variable getter.
-  category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_GET_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_VARIABLES_GET_HELPURL);
     this.setColour(330);
     this.appendDummyInput()
         .appendTitle(Blockly.LANG_VARIABLES_GET_TITLE)
@@ -147,9 +144,8 @@ Blockly.JavaScript.variables_get_counter = Blockly.JavaScript.variables_get;
 
 Blockly.Language.variables_get_length = {
   // Variable getter.
-  category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_GET_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_VARIABLES_GET_HELPURL);
     this.setColour(330);
     this.appendDummyInput()
         .appendTitle(Blockly.LANG_VARIABLES_GET_TITLE)
@@ -166,9 +162,8 @@ Blockly.JavaScript.variables_get_length = Blockly.JavaScript.variables_get;
 
 Blockly.Language.variables_get_height = {
   // Variable getter.
-  category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_GET_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_VARIABLES_GET_HELPURL);
     this.setColour(330);
     this.appendDummyInput()
         .appendTitle(Blockly.LANG_VARIABLES_GET_TITLE)
@@ -185,9 +180,8 @@ Blockly.JavaScript.variables_get_height = Blockly.JavaScript.variables_get;
 
 Blockly.Language.variables_get_sides = {
   // Variable getter.
-  category: null,  // Variables are handled specially.
-  helpUrl: Blockly.LANG_VARIABLES_GET_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_VARIABLES_GET_HELPURL);
     this.setColour(330);
     this.appendDummyInput()
         .appendTitle(Blockly.LANG_VARIABLES_GET_TITLE)
@@ -288,8 +282,8 @@ Blockly.JavaScript.draw_a_snowman = function() {
 // variable named "counter" hardcoded.
 Blockly.Language.controls_for_counter = {
   // For loop with hardcoded loop variable.
-  helpUrl: Blockly.LANG_CONTROLS_FOR_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_CONTROLS_FOR_HELPURL);
     this.setColour(120);
     this.appendDummyInput()
         .appendTitle(Blockly.LANG_CONTROLS_FOR_INPUT_WITH)
@@ -345,7 +339,6 @@ delete Blockly.Language.procedures_ifreturn;
 
 Blockly.Language.draw_move = {
   // Block for moving forward or backwards.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendValueInput('VALUE')
@@ -375,7 +368,6 @@ Blockly.JavaScript.draw_move = function() {
 
 Blockly.Language.jump = {
   // Block for moving forward or backwards.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendValueInput('VALUE')
@@ -405,7 +397,6 @@ Blockly.JavaScript.jump = function() {
 
 Blockly.Language.draw_turn = {
   // Block for turning left or right.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendValueInput('VALUE')
@@ -435,7 +426,6 @@ Blockly.JavaScript.draw_turn = function() {
 
 Blockly.Language.draw_width = {
   // Block for setting the pen width.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendValueInput('WIDTH')
@@ -456,7 +446,6 @@ Blockly.JavaScript.draw_width = function() {
 
 Blockly.Language.draw_pen = {
   // Block for pen up/down.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.appendDummyInput()
@@ -479,7 +468,6 @@ Blockly.JavaScript.draw_pen = function() {
 
 Blockly.Language.draw_colour = {
   // Block for setting the colour.
-  helpUrl: '',
   init: function() {
     this.setColour(20);
     this.appendValueInput('COLOUR')
@@ -502,7 +490,6 @@ Blockly.JavaScript.draw_colour = function() {
 
 Blockly.Language.turtle_visibility = {
   // Block for changing turtle visiblity.
-  helpUrl: '',
   init: function() {
     this.setColour(160);
     this.setPreviousStatement(true, null);

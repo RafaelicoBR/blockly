@@ -29,8 +29,8 @@ Blockly.JavaScript = Blockly.Generator.get('JavaScript');
 
 Blockly.Language.maze_moveForward = {
   // Block for moving forward.
-  helpUrl: 'http://code.google.com/p/blockly/wiki/Move',
   init: function() {
+    this.setHelpUrl('http://code.google.com/p/blockly/wiki/Move');
     this.setColour(290);
     this.appendDummyInput()
         .appendTitle(BlocklyApps.getMsg('moveForward'));
@@ -47,8 +47,8 @@ Blockly.JavaScript.maze_moveForward = function() {
 
 Blockly.Language.maze_turn = {
   // Block for turning left or right.
-  helpUrl: 'http://code.google.com/p/blockly/wiki/Turn',
   init: function() {
+    this.setHelpUrl('http://code.google.com/p/blockly/wiki/Turn');
     this.setColour(290);
     this.appendDummyInput()
         .appendTitle(new Blockly.FieldDropdown(this.DIRECTIONS), 'DIR');
@@ -70,7 +70,6 @@ Blockly.JavaScript.maze_turn = function() {
 
 Blockly.Language.maze_isPath = {
   // Block for checking if there a path.
-  helpUrl: '',
   init: function() {
     this.setColour(210);
     this.setOutput(true, 'Boolean');
@@ -93,7 +92,6 @@ Blockly.JavaScript.maze_isPath = function() {
 
 Blockly.Language.maze_if = {
   // Block for 'if' conditional if there is a path.
-  helpUrl: '',
   init: function() {
     this.setColour(210);
     this.appendDummyInput()
@@ -120,7 +118,6 @@ Blockly.JavaScript.maze_if = function() {
 
 Blockly.Language.maze_ifElse = {
   // Block for 'if/else' conditional if there is a path.
-  helpUrl: '',
   init: function() {
     this.setColour(210);
     this.appendDummyInput()
@@ -151,8 +148,8 @@ Blockly.JavaScript.maze_ifElse = function() {
 
 Blockly.Language.maze_forever = {
   // Do forever loop.
-  helpUrl: 'http://code.google.com/p/blockly/wiki/Repeat',
   init: function() {
+    this.setHelpUrl('http://code.google.com/p/blockly/wiki/Repeat');
     this.setColour(120);
     this.appendDummyInput()
         .appendTitle(BlocklyApps.getMsg('repeatUntil'))

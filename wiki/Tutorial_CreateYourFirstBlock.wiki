@@ -74,8 +74,8 @@ Once complete you can see two sets of generated code in the tables to the right.
 ==== BLockly Language Code ====
 {{{
 Blockly.Language.move_to = {
-  helpUrl: 'http://www.example.com/',
   init: function() {
+    this.setHelpUrl('http://www.example.com/');
     this.setColour(160);
     this.appendDummyInput()
 	.appendTitle("move to");
@@ -129,8 +129,8 @@ The code will now need some modification. Replace the source code above with:
 Blockly.Language.draw_moveto = {
   // move turtle to absolute x,y location
   // for reference 0,0 is top/let and 200,200 is centre
-  helpUrl: '',
   init: function() {
+    this.setHelpUrl('');
     this.setColour(160);
     this.appendDummyInput()
         .appendTitle(BlocklyApps.getMsg('Turtle_moveTo'));
@@ -261,7 +261,7 @@ for (x_position = 100; x_position <= 300; x_position += 15) {
 
 <br><br>
 
-== END OF TUTORIAL == 
+== END OF TUTORIAL ==
 
 That's your first block under way. If you want to modify the blocks functionality/appearance then its just a matter of changing the code and re-compiling (as per Step 5).
 <br>

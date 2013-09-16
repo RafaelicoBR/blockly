@@ -29,7 +29,6 @@ Blockly.JavaScript = Blockly.Generator.get('JavaScript');
 
 Blockly.Language.bird_hungry = {
   // Block for hungry condition.
-  helpUrl: '',
   init: function() {
     this.setColour(330);
     this.appendDummyInput()
@@ -46,7 +45,6 @@ Blockly.JavaScript.bird_hungry = function() {
 
 Blockly.Language.bird_heading = {
   // Block for moving bird in a direction.
-  helpUrl: '',
   init: function() {
     this.setColour(290);
     this.appendDummyInput()
@@ -65,7 +63,6 @@ Blockly.JavaScript.bird_heading = function() {
 
 Blockly.Language.bird_position = {
   // Block for getting bird's x or y position.
-  helpUrl: '',
   init: function() {
     this.setColour(330);
     this.appendDummyInput()
@@ -83,8 +80,8 @@ Blockly.JavaScript.bird_position = function() {
 
 Blockly.Language.bird_compare = {
   // Block for comparing bird's x or y position with a number.
-  helpUrl: Blockly.LANG_LOGIC_COMPARE_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_LOGIC_COMPARE_HELPURL);
     if (Blockly.RTL) {
       var OPERATORS = [['>', 'LT'], ['<', 'GT']];
     } else {
@@ -124,8 +121,8 @@ Blockly.JavaScript.bird_compare = function() {
 
 Blockly.Language.bird_and = {
   // Block for logical operator 'and'.
-  helpUrl: Blockly.LANG_LOGIC_OPERATION_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_LOGIC_OPERATION_HELPURL);
     this.setColour(210);
     this.setOutput(true, 'Boolean');
     this.appendValueInput('A')
@@ -149,8 +146,8 @@ Blockly.JavaScript.bird_and = function() {
 
 Blockly.Language.bird_ifElse = {
   // Block for 'if/else'.
-  helpUrl: Blockly.LANG_CONTROLS_IF_HELPURL,
   init: function() {
+    this.setHelpUrl(Blockly.LANG_CONTROLS_IF_HELPURL);
     this.setColour(210);
     this.appendValueInput("CONDITION")
         .appendTitle(BlocklyApps.getMsg('Bird_if'))
