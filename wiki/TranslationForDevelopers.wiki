@@ -2,7 +2,7 @@
 
 This document provides what developers should know about Blockly translations.  Translators should read [https://code.google.com/p/blockly/wiki/Translation this document] instead.
 
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="4" />
 
 = Introduction =
 
@@ -145,7 +145,7 @@ Before checking in code, developers should do a full i18n build by following the
 
 ==== !SoyMsgExtractor.jar ====
 
-<font color="orange">!SoyMsgExtractor.jar</font>extracts the messages from the template files into `extracted_msgs.xlf`.  For example, this message:
+<font color="orange">!SoyMsgExtractor.jar</font> extracts the messages from the template files into `extracted_msgs.xlf`.  For example, this message:
 
 {{{
 {msg meaning="Maze.moveForward" 
