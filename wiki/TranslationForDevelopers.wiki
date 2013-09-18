@@ -28,8 +28,8 @@ The Blockly applications and tutorials (henceforth referred to as "apps") are bu
 Here is an example of a message definition:
 
 {{{
-{msg meaning="Maze.moveForward" 
-     desc="block text - Imperative or infinitive of a verb fo r a person moving 
+{msg meaning="Maze.moveForward"
+     desc="block text - Imperative or infinitive of a verb fo r a person moving
            (walking) in the direction he/she is facing."}
   move forward
 {/msg}
@@ -39,11 +39,11 @@ Notes:
   * The key is defined through the "meaning" attribute: "Maze.moveForward".
   * The message documentation for the translator is defined through the "desc" attribute.  This appears as the value in the qqq.json file.
   * The English language text appears between the "msg" start and end tags.  This appears as the value in the en.json file.
- 
+
 A left brace or right brace can be included in an attribute value by using double braces to introduce and close the "msg" tags and writing "{lb}" [left brace] for "{" or "{rb}" for "}", as in this definition:
 
 {{{
-{{msg meaning="Puzzle.country1Language" 
+{{msg meaning="Puzzle.country1Language"
       desc="The English language.{lb}{lb}Identical|English{rb}{rb}"}}
   English
 {{/msg}}
@@ -57,12 +57,12 @@ A left brace or right brace can be included in an attribute value by using doubl
 If a message is used only once and the use is within the template, it can be defined where it is used:
 
 {{{
-<button class="notext" 
-        title="{msg meaning="Apps.codeTooltip" 
+<button class="notext"
+        title="{msg meaning="Apps.codeTooltip"
                     desc="tooltip (pop-up help) for button; pressing the button causes a program in the
                           JavaScript computer language to be displayed, based on the program created by the user."}
                  See generated JavaScript code.
-            {/msg}" 
+            {/msg}"
         onclick="BlocklyApps.showCode(this);">
   <img src="../../media/1x1.gif" class="code icon21">
 </button>
@@ -74,8 +74,8 @@ If a message is used by a !JavaScript file, such as maze.js or blocks.js, it mus
 
 {{{
 <span id="Maze_moveForward">
-  {msg meaning="Maze.moveForward" 
-       desc="block text - Imperative or infinitive of a verb for a person moving 
+  {msg meaning="Maze.moveForward"
+       desc="block text - Imperative or infinitive of a verb for a person moving
              (walking) in the direction he/she is facing."}
     move forward
   {/msg}
@@ -84,7 +84,7 @@ If a message is used by a !JavaScript file, such as maze.js or blocks.js, it mus
 By convention, the id of the span is the same as the "meaning" key but replaces periods with underscores.  The message is referenced from code through the method {{{BlocklyApps.getMsg()}}}, as in the example below from [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/blocks.js apps/maze/blocks.js]:
 
 {{{
-Blockly.Language.maze_moveForward = {
+Blockly.Blocks.maze_moveForward = {
   // Block for moving forward.  [A portion of the following code is omitted.]
   init: function() {
     this.setColour(290);
@@ -101,8 +101,8 @@ If a message is used in more than one app, it should be defined within a span in
 
 {{{
 <span id="blocklyMessage">
-  {msg meaning="Apps.blocklyMessage" 
-         desc="The project name.  If readers of your language would know approximately how to pronounce 'Blockly', 
+  {msg meaning="Apps.blocklyMessage"
+         desc="The project name.  If readers of your language would know approximately how to pronounce 'Blockly',
                leave unchanged.  Otherwise, include a transliteration in parentheses, such as the Russian:
                'Blockly (\u0411\u043bo\u043a\u043b\u0438)'."}
      Blockly
@@ -148,8 +148,8 @@ Before checking in code, developers should do a full i18n build by following the
 <font color="orange">!SoyMsgExtractor.jar</font> extracts the messages from the template files into `extracted_msgs.xlf`.  For example, this message:
 
 {{{
-{msg meaning="Maze.moveForward" 
-     desc="block text - Imperative or infinitive of a verb for a person moving 
+{msg meaning="Maze.moveForward"
+     desc="block text - Imperative or infinitive of a verb for a person moving
            (walking) in the direction he/she is facing."}
   move forward
 {/msg}

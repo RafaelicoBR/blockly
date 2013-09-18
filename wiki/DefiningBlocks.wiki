@@ -7,13 +7,11 @@ Note that much of block creation can be done through the Blockly GUI using [http
 
 = Defining a Block =
 
-Go to the `language/` directory, and open the subdirectory containing the human language you wish to develop with (`en/` is specifically English, `common/` are blocks common to all languages.).
-
-Assuming your block(s) don't fit in the existing categories, create a new !JavaScript file.  This new !JavaScript file needs to be included in the list of `<script ...>` tags in the editor's HTML file.
+Go to the `blocks/` directory.  Assuming your block(s) don't fit in the existing categories, create a new !JavaScript file.  This new !JavaScript file needs to be included in the list of `<script ...>` tags in the editor's HTML file.
 
 A typical block definition looks like this:
 {{{
-Blockly.Language.text_length = {
+Blockly.Blocks.text_length = {
   init: function() {
     this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
     this.setColour(160);

@@ -73,7 +73,7 @@ Once complete you can see two sets of generated code in the tables to the right.
 
 ==== BLockly Language Code ====
 {{{
-Blockly.Language.move_to = {
+Blockly.Blocks.move_to = {
   init: function() {
     this.setHelpUrl('http://www.example.com/');
     this.setColour(160);
@@ -126,7 +126,7 @@ Blockly.JavaScript.draw_move = function() {
 The code will now need some modification. Replace the source code above with:
 
 {{{
-Blockly.Language.draw_moveto = {
+Blockly.Blocks.draw_moveto = {
   // move turtle to absolute x,y location
   // for reference 0,0 is top/let and 200,200 is centre
   init: function() {

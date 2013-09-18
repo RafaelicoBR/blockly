@@ -13,7 +13,7 @@ If you do not need to modify the code, you can use our public server at http://b
 
 First, download the source code.  Use Subversion to pull a copy of Blockly off of Google Code.  There are plenty of Subversion tutorials on the web.
 
-Once you have the code, point your browser at `apps/maze/index.html` and test out the maze app.  Verify that clicking "Run Program" will make the man move forward.  Note that [http://code.google.com/p/chromium/issues/detail?id=47416 issue 47416] in the Chrome web browser prevents the use of Blockly when run directly off the local file system with the `file://` protocol.  Therefore we recommend either using an alternative browser (Firefox, Safari, Opera) or else using a web server (`http://localhost/` will do fine).
+Once you have the code, point your browser at `apps/maze/index.html` and test out the maze app.  Verify that clicking "Run Program" will make the man move forward.
 
 == Injecting Blockly ==
 

@@ -14,16 +14,17 @@ Both of these issues may be solved by [InjectingResizable injecting Blockly into
 
 == Injection ==
 
-If neither of the above limitations are a concern, include the core Blockly script.  Note that the path may vary, depending on where your page is in relation to Blockly:
+If neither of the above limitations are a concern, include the core Blockly script and the core blocks set.  Note that the path may vary, depending on where your page is in relation to Blockly:
 
 {{{
   <script type="text/javascript" src="blockly_compressed.js"></script>
+  <script type="text/javascript" src="blocks_compressed.js"></script>
 }}}
 
 Then include the messages for the user's language (in this case English):
 
 {{{
-  <script type="text/javascript" src="en_compressed.js"></script>
+  <script type="text/javascript" src="msg/js/en.js"></script>
 }}}
 
 Add an empty div to the page and set its size:
