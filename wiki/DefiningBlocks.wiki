@@ -11,7 +11,7 @@ Go to the `blocks/` directory.  Assuming your block(s) don't fit in the existing
 
 A typical block definition looks like this:
 {{{
-Blockly.Blocks.text_length = {
+Blockly.Blocks['text_length'] = {
   init: function() {
     this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
     this.setColour(160);

@@ -16,7 +16,7 @@ This new !JavaScript file needs to be included in the list of `<script ...>` tag
 
 A typical block's code generator looks like this:
 {{{
-Blockly.JavaScript.text_indexOf = function() {
+Blockly.JavaScript['text_indexOf'] = function() {
   // Search the text for a substring.
   var operator = this.getTitleValue('END') == 'FIRST' ? 'indexOf' : 'lastIndexOf';
   var argument0 = Blockly.JavaScript.valueToCode(this, 'FIND',

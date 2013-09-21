@@ -84,7 +84,7 @@ If a message is used by a !JavaScript file, such as maze.js or blocks.js, it mus
 By convention, the id of the span is the same as the "meaning" key but replaces periods with underscores.  The message is referenced from code through the method {{{BlocklyApps.getMsg()}}}, as in the example below from [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/blocks.js apps/maze/blocks.js]:
 
 {{{
-Blockly.Blocks.maze_moveForward = {
+Blockly.Blocks['maze_moveForward'] = {
   // Block for moving forward.  [A portion of the following code is omitted.]
   init: function() {
     this.setColour(290);

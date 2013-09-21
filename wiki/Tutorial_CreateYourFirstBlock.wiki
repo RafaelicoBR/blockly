@@ -73,7 +73,7 @@ Once complete you can see two sets of generated code in the tables to the right.
 
 ==== BLockly Language Code ====
 {{{
-Blockly.Blocks.move_to = {
+Blockly.Blocks['move_to'] = {
   init: function() {
     this.setHelpUrl('http://www.example.com/');
     this.setColour(160);
@@ -94,7 +94,7 @@ Blockly.Blocks.move_to = {
 
 ==== Blockly JavaScript stub code ====
 {{{
-Blockly.JavaScript.move_to = function() {
+Blockly.JavaScript['move_to'] = function() {
   var value_xpos = Blockly.JavaScript.valueToCode(this, 'XPOS', Blockly.JavaScript.ORDER_ATOMIC);
   var value_ypos = Blockly.JavaScript.valueToCode(this, 'YPOS', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
@@ -118,7 +118,7 @@ Open *blocks.js* via a standard text editor or IDE.
 Taking the above two blocks of code, paste both parts in _after_ this section of code.
 
 {{{
-Blockly.JavaScript.draw_move = function() {
+Blockly.JavaScript['draw_move'] = function() {
   ...
 };
 }}}
@@ -126,7 +126,7 @@ Blockly.JavaScript.draw_move = function() {
 The code will now need some modification. Replace the source code above with:
 
 {{{
-Blockly.Blocks.draw_moveto = {
+Blockly.Blocks['draw_moveto'] = {
   // move turtle to absolute x,y location
   // for reference 0,0 is top/let and 200,200 is centre
   init: function() {
@@ -147,7 +147,7 @@ Blockly.Blocks.draw_moveto = {
   }
 };
 
-Blockly.JavaScript.draw_moveto = function() {
+Blockly.JavaScript['draw_moveto'] = function() {
   // Generate JavaScript for moving to absolute position
   var xpos = Blockly.JavaScript.valueToCode(this, 'XPOS', Blockly.JavaScript.ORDER_NONE) || '0';
   var ypos = Blockly.JavaScript.valueToCode(this, 'YPOS', Blockly.JavaScript.ORDER_NONE) || '0';
