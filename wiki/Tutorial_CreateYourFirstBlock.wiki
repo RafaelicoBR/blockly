@@ -94,11 +94,11 @@ Blockly.Blocks['move_to'] = {
 
 ==== Blockly JavaScript stub code ====
 {{{
-Blockly.JavaScript['move_to'] = function() {
-  var value_xpos = Blockly.JavaScript.valueToCode(this, 'XPOS', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_ypos = Blockly.JavaScript.valueToCode(this, 'YPOS', Blockly.JavaScript.ORDER_ATOMIC);
+Blockly.JavaScript['move_to'] = function(block) {
+  var value_xpos = Blockly.JavaScript.valueToCode(block, 'XPOS', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_ypos = Blockly.JavaScript.valueToCode(block, 'YPOS', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = '...'
+  var code = '...';
   return code;
 };
 }}}
@@ -118,7 +118,7 @@ Open *blocks.js* via a standard text editor or IDE.
 Taking the above two blocks of code, paste both parts in _after_ this section of code.
 
 {{{
-Blockly.JavaScript['draw_move'] = function() {
+Blockly.JavaScript['draw_move'] = function(block) {
   ...
 };
 }}}
@@ -147,11 +147,11 @@ Blockly.Blocks['draw_moveto'] = {
   }
 };
 
-Blockly.JavaScript['draw_moveto'] = function() {
+Blockly.JavaScript['draw_moveto'] = function(block) {
   // Generate JavaScript for moving to absolute position
-  var xpos = Blockly.JavaScript.valueToCode(this, 'XPOS', Blockly.JavaScript.ORDER_NONE) || '0';
-  var ypos = Blockly.JavaScript.valueToCode(this, 'YPOS', Blockly.JavaScript.ORDER_NONE) || '0';
-  return 'Turtle.moveTo(' + xpos + ',' + ypos + ', \'block_id_' + this.id + '\');\n';
+  var xpos = Blockly.JavaScript.valueToCode(block, 'XPOS', Blockly.JavaScript.ORDER_NONE) || '0';
+  var ypos = Blockly.JavaScript.valueToCode(block, 'YPOS', Blockly.JavaScript.ORDER_NONE) || '0';
+  return 'Turtle.moveTo(' + xpos + ',' + ypos + ', \'block_id_' + block.id + '\');\n';
 };
 }}}
 
