@@ -7,12 +7,7 @@
 
 First, go to the `generators/` directory and choose the subdirectory that corresponds to the language you want to generate (!JavaScript, Python, etc).
 
-Assuming your block(s) don't fit in the existing categories, create a new !JavaScript file.  It should start with this definition (this and all subsequent examples use `JavaScript` as the language, substitute with the appropriate language):
-{{{
-Blockly.JavaScript = Blockly.Generator.get('JavaScript');
-}}}
-
-This new !JavaScript file needs to be included in the list of `<script ...>` tags in the editor's HTML file.
+Assuming your block(s) don't fit in the existing categories, create a new !JavaScript file.  This new !JavaScript file needs to be included in the list of `<script ...>` tags in the editor's HTML file.
 
 A typical block's code generator looks like this:
 {{{

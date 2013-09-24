@@ -21,10 +21,10 @@ Here is the !JavaScript generator:
 The user's blocks may be exported to code at any time from your application with this call:
 
 {{{
-  var code = Blockly.Generator.workspaceToCode('JavaScript');
+  var code = Blockly.JavaScript.workspaceToCode();
 }}}
 
-Replace `'JavaScript'` with `'Python'` in all preceding lines to switch the language generated.
+Replace `JavaScript` with `Python` in all preceding lines to switch the language generated.
 
 == Realtime Generation ==
 
@@ -32,7 +32,7 @@ Generating code is an extremely fast operation, so there's no harm in calling th
 
 {{{
   function myUpdateFunction() {
-    var code = Blockly.Generator.workspaceToCode('JavaScript');
+    var code = Blockly.JavaScript.workspaceToCode();
     document.getElementById('textarea').value = code;
   }
   Blockly.addChangeListener(myUpdateFunction);
@@ -44,7 +44,7 @@ If !JavaScript code is generated, it may be executed right in the browser:
 
 {{{
   Blockly.JavaScript.addReservedWords('code');
-  var code = Blockly.Generator.workspaceToCode('JavaScript');
+  var code = Blockly.JavaScript.workspaceToCode();
   try {
     eval(code);
   } catch (e) {
@@ -65,7 +65,7 @@ To accomplish this, just set `Blockly.JavaScript.INFINITE_LOOP_TRAP` to a code s
 {{{
   window.LoopTrap = 1000;
   Blockly.JavaScript.INFINITE_LOOP_TRAP = 'if(--window.LoopTrap == 0) throw "Infinite loop.";\n';
-  var code = Blockly.Generator.workspaceToCode('JavaScript');
+  var code = Blockly.JavaScript.workspaceToCode();
 }}}
 
 == Example ==
