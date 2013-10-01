@@ -1,4 +1,4 @@
-#summary Running Blockly on App Engine
+#summary Running Blockly on App Engine.
 #labels Phase-Deploy
 
 *[Installation Installation]: Cloud Storage*
