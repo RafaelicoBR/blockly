@@ -145,6 +145,8 @@ https://blockly.googlecode.com/svn/wiki/list-sub-list1.png
 
 https://blockly.googlecode.com/svn/wiki/list-sub-list2.png
 
+A few languages (notably Hungarian) require text following the right socket (hole).  This is referred to as a "tail" message.
+
 In this example, a new list *first letters* is created.  This new list has two elements: ["alpha", "beta"].
 
 https://blockly.googlecode.com/svn/wiki/list-sub-list-example.png
