@@ -20,7 +20,7 @@ The first step is to get your own copy of Blockly running on App Engine.
    * `msg/`
    * `media/`
    * `*_compressed.js`
-# If you'd like to use `blockly_uncompressed.js` on the server, also copy that into `appengine/static/` and copy `closure-library-read-only/` into the parent directory, `appengine/`.
+ # If you'd like to use `blockly_uncompressed.js` on the server, also copy that into `appengine/static/` and copy `closure-library-read-only/` into the parent directory, `appengine/`.
  # Run the Google App Engine Launcher from the GUI, add your `appengine` directory as an existing application, and press the "Deploy" button.  If you prefer to use the command line, run: `appcfg.py --oauth2 update appengine/`.
 
 Once Blockly is uploaded you can point a browser to the URL you created in step 2.  You should see a list of demos, including the cloud storage demo.
