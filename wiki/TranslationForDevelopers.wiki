@@ -180,3 +180,18 @@ Note that these do not change the other languages' json files, which were genera
 ==== json_to_js.py ====
 
 Finally, the script <font color="red">json_to_js.py</font> uses the JSON files and template files to generate !JavaScript files for each app-language combination, such as [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/generated/es.js apps/maze/generated/es.js], the Spanish translation of the maze application.
+
+= The Blockly Language =
+
+"The Blockly language" or "core Blockly" refers to the blocks that are defined in [http://code.google.com/p/blockly/source/browse/#svn%2Ftrunk%2Fblocks blocks/] and are independent of (although used by) the apps.  These include blocks for:
+  * control flow (such as if and if-else)
+  * loops
+  * mathematical and logical functions and values
+  * functions on text and on lists
+  * creating and using functions and variables
+In this context of "the core Blockly language", "core" does _not_ refer to the directory [http://code.google.com/p/blockly/source/browse/#svn%2Ftrunk%2Fcore core/], which contains Blockly's low-level base, which is not directly visible to users.
+
+Because the core Blockly language may be used by developers who do not use Closure or Soy, and because the messages are only referenced from JavaScript, we use a different pipeline than described above for messages for applications and tutorials.
+
+== messages.js ==
+
