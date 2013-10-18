@@ -15,10 +15,8 @@ We use [http://www.translatewiki.net TranslateWiki] as our translation console a
   * *_LANG_.json*, mapping message names to the appropriate language text.  Messages that have not been translated to the given language will not be present in this file.
 _LANG_ is (loosely) an [http://en.wikipedia.org/wiki/IETF_language_tag IETF language tag], such as "de" for German or "pt-br" for Brazilian Portuguese.  See this [https://translatewiki.net/wiki/Special:SupportedLanguages incomplete list of languages supported by translatewiki].
 
-Here are links to files for translating the tutorials and applications:
-  * [https://code.google.com/p/blockly/source/browse/trunk/apps/json/qqq.json apps/qqq.json]
-  * [https://code.google.com/p/blockly/source/browse/trunk/apps/json/en.json apps/en.json]
-  * [https://code.google.com/p/blockly/source/browse/trunk/apps/json/de.json apps/de.json] (as one example of a non-English language file).
+!TranslateWiki gives us _LANG_.json files and sometimes a modified `qqq.json` files with improved messages.  All files are transferred through our repository, to which !TranslateWiki has access.  Our
+contact is Siebrand Mazeland.
 
 = Applications and Tutorials =
 
@@ -181,6 +179,10 @@ Note that these do not change the other languages' json files, which were genera
 
 Finally, the script <font color="red">json_to_js.py</font> uses the JSON files and template files to generate !JavaScript files for each app-language combination, such as [https://code.google.com/p/blockly/source/browse/trunk/apps/maze/generated/es.js apps/maze/generated/es.js], the Spanish translation of the maze application.
 
+== Translation status ==
+
+The status of the translations can be found at "https://translatewiki.net/w/i.php?title=Special%3AMessageGroupStats&x=D&group=out-blockly-apps&suppressempty=1".
+
 = The Blockly Language =
 
 "The Blockly language" or "core Blockly" refers to the blocks that are defined in [http://code.google.com/p/blockly/source/browse/#svn%2Ftrunk%2Fblocks blocks/] and are independent of (although used by) the apps.  These include blocks for:
@@ -295,3 +297,7 @@ Blockly.Msg.CHANGE_VALUE_TITLE = "修改值:";
 Blockly.Msg.COLLAPSE_ALL = "Collapse Blocks";  // untranslated
 }}}
 The comment "untranslated" is added automatically by [https://code.google.com/p/blockly/source/browse/trunk/i18n/create_messages.py create_messages.py].
+
+== Translation status ==
+
+The status of the translations can be found at "https://translatewiki.net/w/i.php?title=Special%3AMessageGroupStats&x=D&group=out-blockly-core&suppressempty=1".
