@@ -116,7 +116,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Ukrainian (uk) ==
 
- * [https://translatewiki.net/wiki/User_talk:Andriykopanytsia Andriy Bandura]
+ * [https://translatewiki.net/wiki/User:Andriykopanytsia Andriy Bandura]
 
 == Vietnamese ==
  * [https://translatewiki.net/wiki/User:Qneutron Quynh Neutron]
