@@ -183,6 +183,15 @@ Finally, the script <font color="red">json_to_js.py</font> uses the JSON files a
 
 The status of the translations can be found at "https://translatewiki.net/w/i.php?title=Special%3AMessageGroupStats&x=D&group=out-blockly-apps&suppressempty=1".
 
+To see how complete each application is, run the following from the `apps/` directory:
+{{{
+../i18n/status.py json/*.json --html > status.html
+}}}
+View the resulting file in a browser.  Additional options can be seen with:
+{{{
+../i18n/status.py --help
+}}}
+
 = The Blockly Language =
 
 "The Blockly language" or "core Blockly" refers to the blocks that are defined in [http://code.google.com/p/blockly/source/browse/#svn%2Ftrunk%2Fblocks blocks/] and are independent of (although used by) the apps.  These include blocks for:
