@@ -30,7 +30,7 @@ Optionally, personalize your user page.  You can do this by clicking on your use
 
 == Reading about Blockly translation ==
 
-Visit [http://translatewiki.net/wiki/Translating:Blockly Translating:Blockly].  Read the first section (General Translation Notes), skim the second section (The Blockly Language) for now, and carefully read the sections for whatever portion of the system you want to translate.  Right now, the only available portion is the Puzzle.
+Visit [http://translatewiki.net/wiki/Translating:Blockly Translating:Blockly], which has detailed information for translators.  Please contact us with any questions.  You can leave a comment on this page or use the translatewiki interface to give feedback.
 
 == Start translating ==
 
