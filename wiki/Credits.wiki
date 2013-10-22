@@ -1,8 +1,8 @@
 #summary People who contributed to Blockly.
 
-IN PROGRESS
-
 = Engineers =
+
+== Core ==
  * Neil Fraser
  * Quynh Neutron
  * Chris Pirich
@@ -14,7 +14,7 @@ IN PROGRESS
 
 = Translators =
 
-Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net, which we have been using.  Anatoly Techtonik helped with several Serbian languages.
+Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net, which we have been using.  Anatoly Techtonik helped with several Serbian languages.  [https://translatewiki.net/wiki/User:Shirayuki Shirayuki (しらゆき)] improved the message documentation.
 
 == Afrikaans (af) ==
  * [https://translatewiki.net/wiki/User:Naudefj Naudefj]
@@ -42,6 +42,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == French (fr) ==
  * Thierry Grandpierre
+ * [https://translatewiki.net/wiki/User:Gomoko Guillaume Moko]
 
 == Galician (gl) ==
  * [https://translatewiki.net/wiki/User:Toli%C3%B1o Toliño]
@@ -69,7 +70,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Italian (it) ==
  * [https://translatewiki.net/wiki/User:Beta16 Beta16]
- * [Tevac.com]
+ * [http://Tevac.com Tevac.com]
 
 == Japanese (ja) ==
  * [https://translatewiki.net/wiki/User:Shirayuki Shirayuki (しらゆき)]
@@ -110,6 +111,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Swahili (sw) ==
  * Caroline Chumo
+
+== Swedish (sv) ==
+ * [https://translatewiki.net/wiki/User:WikiPhoenix WikiPhoenix]
 
 == Turkish (tr) ==
 
