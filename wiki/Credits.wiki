@@ -72,6 +72,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Greek (el) ==
 
  * Alexandros Zountas
+ * [https://translatewiki.net/wiki/User:Evropi Γ.Α.]
+ * [https://translatewiki.net/wiki/User:Namatreasure Nikos Ioannou]
+ * [https://translatewiki.net/wiki/User:Tifa93 Tifa93]
 
 ==  Hakka (hak) ==
  *  [https://translatewiki.net/wiki/User:Anson2812 Anson2812]
