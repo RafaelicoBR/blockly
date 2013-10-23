@@ -19,6 +19,12 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Afrikaans (af) ==
  * [https://translatewiki.net/wiki/User:Naudefj Naudefj]
 
+== Arabic (ar) ==
+ * [https://translatewiki.net/wiki/User:Kuwaity26 Kuwaity26]
+ * [https://translatewiki.net/wiki/User:Meno25 Meno25]
+ * [https://translatewiki.net/wiki/User:Mgi92 Mohammad Issa]
+
+
 == Basque (eu) ==
  * xabierg@gmail.com
 
