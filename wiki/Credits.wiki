@@ -49,7 +49,11 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [https://translatewiki.net/wiki/User:Reaperman Reaperman]
 
 == Danish ==
+ * [https://translatewiki.net/wiki/User:Peter_Alberti Peter Alberti]
+ * [https://translatewiki.net/wiki/User:Christian_List Christian List]
+ * [https://translatewiki.net/wiki/User:Hein0170 Heine Ravnholt]
  * Peter Frøkjær Strand
+ * [https://translatewiki.net/wiki/User:Simeondahl Simeondahl]
 
 == Dutch/Flemish (nl) ==
  * [http://translatewiki.net/wiki/User:Siebrand Siebrand Mazeland]
