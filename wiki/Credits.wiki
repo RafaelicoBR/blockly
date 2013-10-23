@@ -28,6 +28,12 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Basque (eu) ==
  * xabierg@gmail.com
 
+== Breton (br) ==
+ * [https://translatewiki.net/wiki/User:Fohanno Thierry Fohanno]
+ * [https://translatewiki.net/wiki/User:Fulup Fulup]
+ * [https://translatewiki.net/wiki/User:Gwenn-Ael Gwenn-Ael]
+ * [https://translatewiki.net/wiki/User:Y-M_D y-M D]
+
 == Catalan (ca) ==
  * Toni Hortal
  * Václav Novotný
