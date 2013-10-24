@@ -115,6 +115,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Malay (ms) ==
  * Sean Lip
 
+== Persian (fa) ==
+ * [https://translatewiki.net/wiki/User:Ebraminio ebraminio]
+
 == Polish (pl) ==
  * [http://translatewiki.net/wiki/User:Rezonansowy Rezonansowy]
  * Robert Posiadała
@@ -127,6 +130,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://translatewiki.net/wiki/User:Eleferen Eleferen]
  * [http://translatewiki.net/wiki/User:Kaganer Paul Kaganer]
  * Lola Nazarova
+ * [https://translatewiki.net/wiki/User:MS Mikhail Semionenkov]
 
 == Spanish (es) ==
  * [https://translatewiki.net/wiki/User:Fortega Fortega]
