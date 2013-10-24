@@ -34,4 +34,4 @@ Visit [http://translatewiki.net/wiki/Translating:Blockly Translating:Blockly], w
 
 == Start translating ==
 
-Start translating by clicking on the "Translate this project" link at the top of [http://translatewiki.net/wiki/Translating:Blockly Translating:Blockly] or going directly to [http://translatewiki.net/w/i.php?title=Special:Translate&group=out-blockly-0-all].
+Start translating by clicking on the "Translate this project" link at the top of [http://translatewiki.net/wiki/Translating:Blockly Translating:Blockly] or going directly to [http://translatewiki.net/w/i.php?title=Special:Translate&group=out-blockly-0-all].  You may have to click on "English" in the phrase "Translate to English" toward the upper right to change to your language.
