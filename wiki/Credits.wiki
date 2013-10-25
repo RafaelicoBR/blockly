@@ -131,6 +131,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://translatewiki.net/wiki/User:Kaganer Paul Kaganer]
  * Lola Nazarova
  * [https://translatewiki.net/wiki/User:MS Mikhail Semionenkov]
+ * [http://translatewiki.net/wiki/User:Okras Okras]
 
 == Spanish (es) ==
  * [https://translatewiki.net/wiki/User:Fortega Fortega]
