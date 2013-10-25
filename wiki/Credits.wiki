@@ -41,6 +41,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Chinese (zh) ==
  * [http://www.cs.cmu.edu/~nli1/ Nan Li]
+ * [http://translatewiki.net/wiki/User:Qiyue2001 Qiyue2001]
 
 == Czech (cs) ==
  * [https://translatewiki.net/wiki/User:Michaelbrabec Michael Brabec]
@@ -141,6 +142,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Swedish (sv) ==
  * [https://translatewiki.net/wiki/User:WikiPhoenix WikiPhoenix]
+ * [http://translatewiki.net/wiki/User:Jopparn Jopparn]
 
 == Turkish (tr) ==
 
@@ -154,3 +156,4 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Vietnamese ==
  * [https://translatewiki.net/wiki/User:Qneutron Quynh Neutron]
  * [https://translatewiki.net/wiki/User:Tuankiet65 Tuankiet65]
+ * [http://translatewiki.net/wiki/User:Baonguyen21022003 Baonguyen21022003]
