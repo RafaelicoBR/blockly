@@ -50,7 +50,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [https://translatewiki.net/wiki/User:Mormegil Mormegil]
  * [https://translatewiki.net/wiki/User:Reaperman Reaperman]
 
-== Danish ==
+== Danish (da) ==
  * [https://translatewiki.net/wiki/User:Peter_Alberti Peter Alberti]
  * [https://translatewiki.net/wiki/User:Christian_List Christian List]
  * [https://translatewiki.net/wiki/User:Hein0170 Heine Ravnholt]
@@ -78,12 +78,17 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [https://translatewiki.net/wiki/User:Namatreasure Nikos Ioannou]
  * [https://translatewiki.net/wiki/User:Tifa93 Tifa93]
 
+== Guarani (gn) ==
+ * [http://translatewiki.net/wiki/User:P._S._F._Freitas P. S. F. Freitas]
+
 ==  Hakka (hak) ==
  *  [https://translatewiki.net/wiki/User:Anson2812 Anson2812]
  *  [https://translatewiki.net/wiki/User:Jetlag Jetlag]
 
 == Hebrew (he) ==
- *  [https://translatewiki.net/wiki/User:Inkbug Inkbug]
+ * [http://www.mediawiki.org/wiki/User:Orsagi Or Sagi]
+ * [https://launchpad.net/~sh-yaron Yaron Shahrabani]
+ * [https://translatewiki.net/wiki/User:Inkbug Inkbug]
 
 == Hungarian (hu) ==
  * [https://translatewiki.net/wiki/User:Grin Grin]
@@ -93,7 +98,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [https://translatewiki.net/wiki/User:McDutchie McDutchie]
 
 == Italian (it) ==
+ * [https://plus.google.com/104860625729766276047/about Michele Neri]
  * [https://translatewiki.net/wiki/User:Beta16 Beta16]
+ * [http://translatewiki.net/wiki/User:Isiond Isiond]
  * [http://Tevac.com Tevac.com]
 
 == Japanese (ja) ==
