@@ -1,5 +1,6 @@
 #summary People who contributed to Blockly.
 
+<wiki:toc max_depth="2" />
 = Engineers =
 
 == Core ==
@@ -135,7 +136,12 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://translatewiki.net/wiki/User:Okras Okras]
 
 == Spanish (es) ==
+ * [https://translatewiki.net/wiki/User:EDGI Eduardo Gill]
+ * [http://translatewiki.net/wiki/User:Fitoschido Fitoschido]
  * [https://translatewiki.net/wiki/User:Fortega Fortega]
+ * [https://translatewiki.net/wiki/User:McDutchie McDutchie]
+ * [http://www.vegadark.com VegaDark]
+
 
 == Swahili (sw) ==
  * Caroline Chumo
