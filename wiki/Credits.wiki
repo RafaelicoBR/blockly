@@ -135,6 +135,11 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://translatewiki.net/wiki/User:Luckas Luckas]
  * [http://translatewiki.net/wiki/User:TheGabrielZaum TheGabrielZaum]
 
+== Romanian (ro) ==
+ * [https://translatewiki.net/wiki/User:Costin_PIETRARU Costin Pietraru]
+ * [https://translatewiki.net/wiki/User:Oana Oana]
+ * [https://ro.wikipedia.org/wiki/Utilizator:Minisarm Sebi]
+
 == Russian (ru) ==
  * [http://translatewiki.net/wiki/User:Eleferen Eleferen]
  * [http://translatewiki.net/wiki/User:Kaganer Paul Kaganer]
