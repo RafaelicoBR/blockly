@@ -115,6 +115,10 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Latvian (lv) ==
  * [http://translatewiki.net/wiki/User:Elomage Leo Selavo]
 
+== Lithuanian (lt) ==
+* [https://translatewiki.net/wiki/User:Eitvys200 Eitvys]
+* [https://translatewiki.net/wiki/User:Vilius2001 Vilius]
+
 == Luxembourgish (lb) ==
  * [http://translatewiki.net/wiki/User:Robby Robby]
 
