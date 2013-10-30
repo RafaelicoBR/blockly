@@ -35,7 +35,7 @@ The `Blockly.inject` line contains as its second argument a dictionary of name-v
 || `toolbox:` || XML nodes or string || Tree structure of categories and blocks available to the user.  See [Toolbox Defining the Toolbox] for more information. ||
 || `trashcan:` || boolean || Displays or hides the trashcan.  Defaults to `true` if the toolbox has categories, `false` otherwise. ||
 
-Blockly's library of blocks is highly configurable.  The blocks shown to the user can be customized so that users only see blocks that are relevant to the task.  Browse the `language/` directory for block categories that you want to include.  The categeries and blocks shown in the toolbox (the side menu) is specified using an [Toolbox XML tree].
+Blockly's library of blocks is highly configurable.  The blocks shown to the user can be customized so that users only see blocks that are relevant to the task.  Browse the `blocks/` directory for block categories that you want to include.  The categories and blocks shown in the toolbox (the side menu) is specified using an [Toolbox XML tree].
 
 Additionally, custom blocks need to be built to call your web application's API.  An example is the [http://blockly-demo.appspot.com/static/apps/maze/index.html Maze application] which has custom blocks for movement.  More info on [CustomBlocks Creating custom blocks]...
 
