@@ -142,6 +142,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * Robert Posiadała
 
 == Portuguese (pt-br) ==
+ * [https://translatewiki.net/wiki/User:Prilopes Priscilla de Abreu Lopes]
  * [http://translatewiki.net/wiki/User:Luckas Luckas]
  * [http://translatewiki.net/wiki/User:TheGabrielZaum TheGabrielZaum]
 
