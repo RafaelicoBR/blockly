@@ -114,6 +114,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Korean (ko) ==
  * [https://translatewiki.net/wiki/User:%EC%95%84%EB%9D%BC 아라 (Ara)]
+ * [https://translatewiki.net/wiki/User:Hym411 Hym411]
 
 == Latin (la) ==
  * [http://translatewiki.net/wiki/User:Autokrator Autokrator]
