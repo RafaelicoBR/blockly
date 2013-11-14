@@ -82,6 +82,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * Alexandros Zountas
  * [https://translatewiki.net/wiki/User:Evropi Γ.Α.]
  * [https://translatewiki.net/wiki/User:Namatreasure Nikos Ioannou]
+ * [https://translatewiki.net/wiki/User:Sfyrakis Sfyrakis]
  * [https://translatewiki.net/wiki/User:Tifa93 Tifa93]
 
 == Guarani (gn) ==
