@@ -185,7 +185,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Ukrainian (uk) ==
 
- * [https://translatewiki.net/wiki/User:Andriykopanytsia Andriy Bandura]
+ * [https://translatewiki.net/wiki/User:Andriykopanytsia Andriy Bandura (Андрій Бандура)]
 
 == Vietnamese (vi) ==
  * [https://translatewiki.net/wiki/User:Qneutron Quynh Neutron]
