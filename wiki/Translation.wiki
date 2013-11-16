@@ -5,7 +5,6 @@
 
 Our goal is for Blockly to be available in as many languages as possible, so students don't have to struggle with English at the same time as they're learning computer science concepts.
 
-We encourage you to join the [https://groups.google.com/forum/?fromgroups#!forum/blockly Blockly user group] and to ask any questions you have.
 
 = Using Blockly =
 
