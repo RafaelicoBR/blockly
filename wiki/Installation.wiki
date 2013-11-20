@@ -11,7 +11,11 @@ If you do not need to modify the code, you can use our public server at http://b
 
 == Get the Code ==
 
-First, download the source code.  Use Subversion to pull a copy of Blockly off of Google Code.  There are plenty of Subversion tutorials on the web.
+First, download the source code.  Use [http://subversion.apache.org/ Subversion] to pull a copy of Blockly off of Google Code:
+
+{{{
+svn checkout http://blockly.googlecode.com/svn/trunk/ blockly
+}}}
 
 Once you have the code, point your browser at `apps/maze/index.html` and test out the maze app.  Verify that clicking "Run Program" will make the man move forward.
 
