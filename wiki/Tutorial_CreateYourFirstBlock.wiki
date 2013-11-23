@@ -268,3 +268,5 @@ That's your first block under way. If you want to modify the blocks functionalit
 Note that you can leave the browser open but you will need to refresh the page in order to see new changes take place.
 
 <g:plusone></g:plusone>
+
+*Please send any questions you have to the [https://groups.google.com/forum/#!forum/blockly support group], not as a comment to this page.*
