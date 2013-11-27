@@ -259,3 +259,5 @@ Tooltips may also be defined as a function instead of a static string.  This all
 http://blockly.googlecode.com/svn/wiki/controls_if.png
 
 Mutators allow advanced blocks to change shape, most notably as a result of users opening a dialog to add, remove or rearrange components.  Creating a mutator is not trivial and is the subject of a separate page: [CreatingMutators Creating Mutators].
+
+*Please send any questions you have to the [https://groups.google.com/forum/#!forum/blockly support group], not as a comment to this page.*
