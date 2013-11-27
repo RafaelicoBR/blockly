@@ -47,7 +47,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [https://translatewiki.net/wiki/User:Alvaro_Vidal-Abarca Alvaro Vidal-Abarca]
 
 == Chinese (zh) ==
- * [http://www.gasolin.idv.tw/ gasolin ((蓋索林)]
+ * [http://www.gasolin.idv.tw/ gasolin (蓋索林)]
  * [http://www.cs.cmu.edu/~nli1/ Nan Li]
  * [https://translatewiki.net/wiki/User:Luotiancheng Luo Tiancheng]
  * [http://translatewiki.net/wiki/User:Qiyue2001 Qiyue2001]
