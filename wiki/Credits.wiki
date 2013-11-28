@@ -103,6 +103,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [https://translatewiki.net/wiki/User:Grin Grin]
  * Takács Viktor László (tviktor75@gmail.com)
 
+== Icelandic (is) ==
+ * [https://translatewiki.net/wiki/User:Jonbg Jon Georgsson]
+
 == Interlingua (ia) ==
  * [https://translatewiki.net/wiki/User:McDutchie McDutchie]
 
