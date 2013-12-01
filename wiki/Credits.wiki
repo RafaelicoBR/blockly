@@ -29,6 +29,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Arabic (ar) ==
  * [https://translatewiki.net/wiki/User:Mgi92 Mohammad Issa]
  * [https://plus.google.com/+FayeqOweis/about Fayeq Oweis]
+ * [http://aivenkov.com Aivenkov]
  * [https://translatewiki.net/wiki/User:Kuwaity26 Kuwaity26]
  * [https://translatewiki.net/wiki/User:Meno25 Meno25]
 
