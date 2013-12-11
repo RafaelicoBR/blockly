@@ -71,7 +71,7 @@ http://i289.photobucket.com/albums/ll234/syntax_photos/BlockFactory_MoveTo_Previ
 
 Once complete you can see two sets of generated code in the tables to the right.
 
-==== BLockly Language Code ====
+==== Blockly Language Code ====
 {{{
 Blockly.Blocks['move_to'] = {
   init: function() {
@@ -163,7 +163,7 @@ Now save the file changes.
 
 Open *turtle.js* via a standard text editor or IDE.
 
-Look for the Turtle API section. It comes under the *// Turle API* comment.
+Look for the Turtle API section. It comes under the *// Turtle API* comment.
 
 Add the following API block of code after the *Turtle.moveBackward{}* API block.
 {{{
