@@ -97,9 +97,13 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  *  [https://translatewiki.net/wiki/User:Jetlag Jetlag]
 
 == Hebrew (he) ==
+ * [http://www.linkedin.com/in/dorongoldberg Doron Goldberg]
  * [http://www.mediawiki.org/wiki/User:Orsagi Or Sagi]
  * [https://launchpad.net/~sh-yaron Yaron Shahrabani]
  * [https://translatewiki.net/wiki/User:Inkbug Inkbug]
+
+== Hindi (hi) ==
+ * [https://translatewiki.net/wiki/User:Bl707 Bl707]
 
 == Hungarian (hu) ==
  * [https://translatewiki.net/wiki/User:Grin Grin]
@@ -184,6 +188,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Swedish (sv) ==
  * [https://translatewiki.net/wiki/User:WikiPhoenix WikiPhoenix]
  * [http://translatewiki.net/wiki/User:Jopparn Jopparn]
+
+== Thai (th) ==
+ * [https://translatewiki.net/wiki/User:Azpirin Azpirin]
 
 == Turkish (tr) ==
 
