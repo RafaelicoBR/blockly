@@ -56,6 +56,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Czech (cs) ==
  * [https://translatewiki.net/wiki/User:Michaelbrabec Michael Brabec]
+ * [https://translatewiki.net/wiki/User:Rosnicka.kacka Rosnicka.kacka]
  * [https://translatewiki.net/wiki/User:Chmee2 Petr Brož]
  * [https://translatewiki.net/wiki/User:Mormegil Mormegil]
  * [https://translatewiki.net/wiki/User:Reaperman Reaperman]
