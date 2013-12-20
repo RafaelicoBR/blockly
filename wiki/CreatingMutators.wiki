@@ -11,14 +11,14 @@ Advanced blocks may use a mutator to be even more dynamic and configurable.  Mut
 
 The XML format used to load, save, copy, and paste blocks automatically captures and restores all data stored in editable fields.  However, if the block contains additional information, this information will be lost when the block is saved and reloaded.
 
-A simple example of this is the English version of the `Blockly.Language.text_trim` block.  This block normally reads "`trim spaces from [both] sides`" where `[both]` is a dropdown with options `both`, `left`, and `right`.  The latter two options result in a grammatical error, requiring the word `sides` to become `side`.  This is easy to accomplish, one just adds a validation function on the dropdown which changes the title.  When the dropdown is changed, so is the title.  However, since the title is not an editable field, it is not saved or restored when converted to and from XML.  To store this extra information, a mutation is stored.
+A simple example of this is the `Blockly.Language.text_trim` block.  This block normally reads "`trim spaces from [both] sides`" where `[both]` is a dropdown with options `both`, `left`, and `right`.  The latter two options result in a grammatical error, requiring the word `sides` to become `side`.  This is easy to accomplish, one just adds a validation function on the dropdown which changes the text field.  When the dropdown is changed, so is the field.  However, since the field is not editable, it is not saved or restored when converted to and from XML.  To store this extra information, a mutation is stored.
 
 Saving mutation data is accomplished by adding a `mutationToDom` function in the block's definition.  Here is the example from the aforementioned `text_trim` block:
 {{{
   mutationToDom: function() {
-    // Save whether the 'sides' title should be plural or singular.
+    // Save whether the 'sides' field should be plural or singular.
     var container = document.createElement('mutation');
-    var plural = (this.getTitleValue('MODE') == 'BOTH');
+    var plural = (this.getFieldValue('MODE') == 'BOTH');
     container.setAttribute('plural', plural);
     return container;
   }
@@ -28,12 +28,12 @@ This function is called whenever a block is being written to XML.  If the functi
 The inverse function is `domToMutation` which is called whenever a block is being restored from XML.  Here is the example from the aforementioned `text_trim` block:
 {{{
   domToMutation: function(xmlElement) {
-    // Restore the 'sides' title as plural or singular.
+    // Restore the 'sides' field as plural or singular.
     var plural = (xmlElement.getAttribute('plural') == 'true');
-    this.setTitleText(plural ? 'sides' : 'side', 'SIDES');
+    this.setFieldText(plural ? 'sides' : 'side', 'SIDES');
   }
 }}}
-If this function exists, it is passed the block's 'mutation' XML element.  The function may parse the element and reconfigure the block based on the element's properties and child elements.  In the above case, a title is changed from singular to plural.
+If this function exists, it is passed the block's 'mutation' XML element.  The function may parse the element and reconfigure the block based on the element's properties and child elements.  In the above case, a field is changed from singular to plural.
 
 == compose and decompose ==
 

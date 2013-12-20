@@ -3,17 +3,17 @@
 
 *[CustomBlocks Creating Custom Blocks]: [DefiningBlocks Defining Blocks]: Drop-down Menus*
 
-Drop-down menus can be somewhat complicated title elements used in creating blocks.
+Drop-down menus can be somewhat complicated field elements used in creating blocks.
 
 == Language Neutrality ==
 
 {{{
-    input.appendTitle('hello');
+    input.appendField('hello');
     var dropdown = new Blockly.FieldDropdown([['world', 'WORLD'], ['computer', 'CPU']]);
-    input.appendTitle(dropdown, 'MODE');
+    input.appendField(dropdown, 'MODE');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleDropdown.png
+http://blockly.googlecode.com/svn/wiki/appendFieldDropdown.png
 
 The `FieldDropdown` object is created with a list of menu options.  Each option is made up of two strings.  The first is the human-readable text to display.  The second is a string constant which is used when saving the option to XML.  This separation allows a dropdown menu's setting to be preserved between languages.  For instance an English (`en/`) version of a block may define `[['left', 'LEFT'], ['right', 'RIGHT']]` while a German (`de/`) version of the same block would define `[['links', 'LEFT'], ['rechts', 'RIGHT']]`.
 
@@ -23,7 +23,7 @@ If all the menu options of a `FieldDropdown` object share common prefix and/or s
 
 {{{
     var dropdown = new Blockly.FieldDropdown([['hello world', 'WORLD'], ['hello computer', 'CPU']]);
-    input.appendTitle(dropdown, 'MODE');
+    input.appendField(dropdown, 'MODE');
 }}}
 
 One advantage of this approach is that the block is easier for to translate into other languages.  The earlier code has the strings `'hello'`, `'world'`, and `'computer'`, whereas the revised code has the strings `'hello world'` and `'hello computer'`.  Translators have a much easier time translating phrases than words in isolation.

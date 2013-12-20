@@ -78,13 +78,13 @@ Blockly.Blocks['move_to'] = {
     this.setHelpUrl('http://www.example.com/');
     this.setColour(160);
     this.appendDummyInput()
-	.appendTitle("move to");
+	.appendField("move to");
     this.appendValueInput("XPOS")
 	.setCheck("Number")
-	.appendTitle("x");
+	.appendField("x");
     this.appendValueInput("YPOS")
 	.setCheck("Number")
-	.appendTitle("y");
+	.appendField("y");
     this.setInputsInline(true);
     this.setPreviousStatement(true);
     this.setNextStatement(true);
@@ -133,13 +133,13 @@ Blockly.Blocks['draw_moveto'] = {
     this.setHelpUrl('');
     this.setColour(160);
     this.appendDummyInput()
-        .appendTitle(BlocklyApps.getMsg('Turtle_moveTo'));
+        .appendField(BlocklyApps.getMsg('Turtle_moveTo'));
     this.appendValueInput("XPOS")
         .setCheck("Number")
-        .appendTitle("x");
+        .appendField("x");
     this.appendValueInput("YPOS")
         .setCheck("Number")
-        .appendTitle("y");
+        .appendField("y");
     this.setInputsInline(true);
     this.setPreviousStatement(true);
     this.setNextStatement(true);
@@ -202,12 +202,12 @@ In order to make the new block appear in the tool box scroll down to the `{templ
 	<block type="draw_moveto">
 		<value name="XPOS">
 			<block type="math_number">
-				<title name="NUM">200</title>
+				<field name="NUM">200</field>
 			</block>
 		</value>
 		<value name="YPOS">
 			<block type="math_number">
-				<title name="NUM">200</title>
+				<field name="NUM">200</field>
 			</block>
 		</value>
 	</block>

@@ -17,7 +17,7 @@ Blockly.Blocks['text_length'] = {
     this.setColour(160);
     this.appendValueInput('VALUE')
         .setCheck('String')
-        .appendTitle('length');
+        .appendField('length');
     this.setOutput(true, 'Number');
     this.setTooltip('Returns number of letters in the provided text.');
   }
@@ -41,7 +41,7 @@ The `init` function creates the block's shape.  In the context of this function 
   * [#appendInput appendDummyInput, appendValueInput, appendStatementInput ]
     * [#setCheck setCheck]
     * [#setAlign setAlign]
-    * [#appendTitle appendTitle]
+    * [#appendField appendField]
   * [#setInputsInline setInputsInline]
   * [#setTooltip setTooltip]
   * [#setMutator setMutator]
@@ -107,22 +107,22 @@ Optionally (and not typically), this function can take a second argument to limi
 
 {{{
     this.appendDummyInput()
-        .appendTitle('for each')
-        .appendTitle('item')
-        .appendTitle(new Blockly.FieldVariable());
+        .appendField('for each')
+        .appendField('item')
+        .appendField(new Blockly.FieldVariable());
     this.appendValueInput('LIST')
         .setCheck('Array')
         .setAlign(Blockly.ALIGN_RIGHT)
-        .appendTitle('in list');
+        .appendField('in list');
     this.appendStatementInput('DO')
-        .appendTitle('do');
+        .appendField('do');
 }}}
 
 http://blockly.googlecode.com/svn/wiki/appendInput.png
 
 Each block has a list of input rows.  There are three types of inputs:
 
-  * `appendDummyInput` - Not an connector, just a row for titles.
+  * `appendDummyInput` - Not an connector, just a row for fields.
   * `appendValueInput` - A socket in which to plug a value block.
   * `appendStatementInput` - A notch for a stack of statement blocks.
 
@@ -148,83 +148,83 @@ This optional function is used for type-checking of connected inputs.  If given 
     input.setAlign(Blockly.ALIGN_RIGHT);
 }}}
 
-This optional function is used to align the titles (see below).  There are three self-descriptive values which may be passed as an argument to this function: `Blockly.ALIGN_LEFT`, `Blockly.ALIGN_RIGHT`, and `Blockly.ALIGN_CENTRE`.  Note the British spelling of 'centre'.  Left alignment is the default.
+This optional function is used to align the fields (see below).  There are three self-descriptive values which may be passed as an argument to this function: `Blockly.ALIGN_LEFT`, `Blockly.ALIGN_RIGHT`, and `Blockly.ALIGN_CENTRE`.  Note the British spelling of 'centre'.  Left alignment is the default.
 
-When designing blocks for RTL (Arabic and Hebrew), left and right are reversed.  Thus `Blockly.ALIGN_RIGHT` would align titles to the left.
+When designing blocks for RTL (Arabic and Hebrew), left and right are reversed.  Thus `Blockly.ALIGN_RIGHT` would align fields to the left.
 
-==== appendTitle ====
+==== appendField ====
 
-Once an input has been created and appended to a block with `appendInput`, one may optionally append any number of titles to the input.  These titles are often used as labels to describe what each input is for.  There are many different types of titles.
+Once an input has been created and appended to a block with `appendInput`, one may optionally append any number of fields to the input.  These fields are often used as labels to describe what each input is for.  There are many different types of fields.
 
 {{{
-    input.appendTitle('hello');
+    input.appendField('hello');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitle.png
+http://blockly.googlecode.com/svn/wiki/appendField.png
 
-A block contains a title row, which can contain any number of title elements.  The simplest title element is text.  Blockly's convention is to use all lowercase text, with the exception of proper names (e.g. Google, SQL).
+An input row can contain any number of field elements.  The simplest field element is text.  Blockly's convention is to use all lowercase text, with the exception of proper names (e.g. Google, SQL).
 
 {{{
     var textInput = new Blockly.FieldTextInput('Neil');
-    input.appendTitle(textInput, 'NAME');
+    input.appendField(textInput, 'NAME');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleTextInput.png
+http://blockly.googlecode.com/svn/wiki/appendFieldTextInput.png
 
-Another title element is a text input field.  First, create the field, then append it to the title row.  Since the code generators will eventually need to access the data in this title element, be sure to give it a name (in this case `'NAME'`).  This name is never seen by the user and should be consistent across all human language versions of the block.
+Another field element is a text input.  First, create the field, then append it to the input row.  Since the code generators will eventually need to access the data in this field element, be sure to give it a name (in this case `'NAME'`).  This name is never seen by the user and should be consistent across all human language versions of the block.
 
 Optionally, the `FieldTextInput` constructor can also take a second argument which becomes the validation function or change handler.  See `math_number` for an example of where the user's input is rewritten.
 
 {{{
     var dropdown = new Blockly.FieldDropdown([['world', 'WORLD'], ['computer', 'CPU']]);
-    input.appendTitle(dropdown, 'MODE');
+    input.appendField(dropdown, 'MODE');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleDropdown.png
+http://blockly.googlecode.com/svn/wiki/appendFieldDropdown.png
 
-Another title element is a drop-down menu.  Just like the text input field, the drop-down menu is created separately, then appended to the title row.  The `FieldDropdown` object is created with a list of menu options, or with a generator function.
+Another field element is a drop-down menu.  Just like the text input field, the drop-down menu is created separately, then appended to the input row.  The `FieldDropdown` object is created with a list of menu options, or with a generator function.
 
 → More info on [DropDown Drop-down Menus]...
 
 {{{
     var variable = new Blockly.FieldVariable('item');
-    input.appendTitle(variable, 'VAR');
+    input.appendField(variable, 'VAR');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleVariable.png
+http://blockly.googlecode.com/svn/wiki/appendFieldVariable.png
 
-Another title element is a variable selection menu.  The `FieldVariable` object is created with the default variable name to use (in this case `'item'`).  If this name is omitted, the variable will be a new unique variable (e.g. `'i'`, `'j'`, `'k'`...).
+Another field element is a variable selection menu.  The `FieldVariable` object is created with the default variable name to use (in this case `'item'`).  If this name is omitted, the variable will be a new unique variable (e.g. `'i'`, `'j'`, `'k'`...).
 
 {{{
     var checkbox = new Blockly.FieldCheckbox('TRUE');
-    input.appendTitle(checkbox, 'TOGGLE');
+    input.appendField(checkbox, 'TOGGLE');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleCheckbox.png
+http://blockly.googlecode.com/svn/wiki/appendFieldCheckbox.png
 
-Another title element is a checkbox.  The `FieldCheckbox` object is created with an initial state, either `'TRUE'` or `'FALSE'`.
+Another field element is a checkbox.  The `FieldCheckbox` object is created with an initial state, either `'TRUE'` or `'FALSE'`.
 
 Optionally, the `FieldCheckbox` constructor can also take a second argument which becomes the validation function or change handler.
 
 {{{
     var colour = new Blockly.FieldColour('#ff0000');
-    input.appendTitle(colour, 'COLOUR');
+    input.appendField(colour, 'COLOUR');
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleColour.png
+http://blockly.googlecode.com/svn/wiki/appendFieldColour.png
 
-Another title element is a colour picker.  The `FieldColour` object is created with an initial colour, in hexadecimal `'#rrggbb'` format.  Note the British spelling.
+Another field element is a colour picker.  The `FieldColour` object is created with an initial colour, in hexadecimal `'#rrggbb'` format.  Note the British spelling.
 
 Optionally, the `FieldColour` constructor can also take a second argument which becomes the validation function or change handler.
 
 {{{
     var image = new Blockly.FieldImage('http://www.gstatic.com/codesite/ph/images/star_on.gif', 15, 15);
-    input.appendTitle(image);
+    input.appendField(image);
 }}}
 
-http://blockly.googlecode.com/svn/wiki/appendTitleImage.png
+http://blockly.googlecode.com/svn/wiki/appendFieldImage.png
 
-Another title element is a static image.  The `FieldImage` object is created with the image URL and the desired height and width.  The image will be scaled to within the specified dimensions, while preserving the aspect ratio.  The block will expand as needed to accommodate the image.
+Another field element is a static image.  The `FieldImage` object is created with the image URL and the desired height and width.  The image will be scaled to within the specified dimensions, while preserving the aspect ratio.  The block will expand as needed to accommodate the image.
 
 If the image is being served locally on a relative URL, use `Blockly.pathToBlockly` to specify Blockly's root directory.
 
