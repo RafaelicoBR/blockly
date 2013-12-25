@@ -123,6 +123,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://Tevac.com Tevac.com]
 
 == Japanese (ja) ==
+ * Keita Oda
  * [https://translatewiki.net/wiki/User:Shirayuki Shirayuki (しらゆき)]
 
 == Korean (ko) ==
