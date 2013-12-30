@@ -158,6 +158,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 
 == Persian (fa) ==
  * ebraminio (ebrahim@gnu.org)
+ * [https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1:Reza1615 کاربر]
 
 == Polish (pl) ==
  * [http://translatewiki.net/wiki/User:Chrumps Chrumps]
