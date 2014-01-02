@@ -1,15 +1,17 @@
 #summary Frequently Asked Questions - High Level.
 #labels Featured
 
-= FAQ - High Level =
+<h1>FAQ - High Level</h1>
 
 These are the most frequently asked questions relating to the purpose of Blockly and what it is (and isn't) good for.
+
+<wiki:toc max_depth="2" />
 
 == How does Blockly relate to Scratch, App Inventor, etc.? ==
 
 === Similarities ===
 
-All are [http://en.wikipedia.org/wiki/Visual_programming_languages visual programming languages].  [http://web.mit.edu/newsoffice/2010/android-abelson-0819.html Historically], Blockly was influenced by [http://en.wikipedia.org/wiki/App_inventor App Inventor], and App Inventor was influenced by Scratch, which was influenced by StarLogo and Etoys.  
+All are [http://en.wikipedia.org/wiki/Visual_programming_languages visual programming languages].  [http://web.mit.edu/newsoffice/2010/android-abelson-0819.html Historically], Blockly was influenced by [http://en.wikipedia.org/wiki/App_inventor App Inventor], and App Inventor was influenced by Scratch, which was influenced by !StarLogo and Etoys.  
 
 The progenitor of all of these was [http://en.wikipedia.org/wiki/Logo_(programming_language) Logo] (not itself a visual programming language), which was co-created by [http://en.wikipedia.org/wiki/Seymour_Papert Seymour Papert] after working with [http://en.wikipedia.org/wiki/Jean_Piaget Jean Piaget], one of the proponents of  [http://en.wikipedia.org/wiki/Constructivism_(learning_theory) constructivist learning theory].
 
@@ -43,9 +45,13 @@ Additionally, most of the high-level features would reside in the domain-specifi
 
 Blockly can export from blocks to !JavaScript and Python.  However we have no plans to import from one of these languages to Blockly.  The main issue is that modern programming languages are fearsomely complex, with closures, list comprehension, operator overloading, etc.  Importing arbitrary code would have a high development cost compared with a limited real-world utility.
 
-== Why isn't there a download archive? ==
+== Can I run Blockly without an Internet connection? ==
 
-Blockly is a technical preview aimed at application developers.  At this point it is not an end-user application.  Users who are not comfortable with syncing Subversion would most likely be disappointed in the current codebase.  They are encouraged, however, to use our [http://blockly-demo.appspot.com public server].
+Yes, although you won't be able to save programs for later use.  See [http://google.github.io/blockly/hoc.html download instructions].
+
+== Why isn't there an installer? ==
+
+Blockly is a technical preview aimed at application developers.  At this point it is not an end-user application.  Users who are not comfortable with syncing Subversion would most likely be disappointed in the current codebase.  They are encouraged, however, to use our [http://blockly-demo.appspot.com public server] or to [http://google.github.io/blockly/hoc.html download a version to run off-line].
 
 == How can I get a young person started with programming? ==
 
