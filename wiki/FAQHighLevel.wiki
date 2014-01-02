@@ -55,7 +55,7 @@ Blockly is a technical preview aimed at application developers.  At this point i
 
 == How can I get a young person started with programming? ==
 
-We recommend trying out the [http://code.org/learn Hour of Code tutorials].  (The Code.org Angry Birds tutorial uses Blockly.)  If one doesn't appeal to the student, try another.  Many offer additional material after the first hour.
+We recommend trying out the [http://code.org/learn Hour of Code tutorials].  (The Code.org Angry Birds tutorial uses Blockly.)  If one doesn't appeal to the student, try another.  Many of the tutorial providers have additional material beyond the first hour.
 
 == Why isn't Blockly available in my native language? ==
 
