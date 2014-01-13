@@ -221,13 +221,13 @@ Another field element is a colour picker.  The `FieldColour` object is created w
 Optionally, the `FieldColour` constructor can also take a second argument which becomes the validation function or change handler.
 
 {{{
-    var image = new Blockly.FieldImage('http://www.gstatic.com/codesite/ph/images/star_on.gif', 15, 15);
+    var image = new Blockly.FieldImage('http://www.gstatic.com/codesite/ph/images/star_on.gif', 15, 15, '*');
     input.appendField(image);
 }}}
 
 http://blockly.googlecode.com/svn/wiki/appendFieldImage.png
 
-Another field element is a static image.  The `FieldImage` object is created with the image URL and the desired height and width.  The image will be scaled to within the specified dimensions, while preserving the aspect ratio.  The block will expand as needed to accommodate the image.
+Another field element is a static image.  The `FieldImage` object is created with the image URL and the desired height and width.  The image will be scaled to within the specified dimensions, while preserving the aspect ratio.  The block will expand as needed to accommodate the image.  An optional fourth argument specifies the alternate text for use when the block is collapsed.
 
 If the image is being served locally on a relative URL, use `Blockly.pathToBlockly` to specify Blockly's root directory.
 
