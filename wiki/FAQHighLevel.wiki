@@ -11,7 +11,7 @@ These are the most frequently asked questions relating to the purpose of Blockly
 
 === Similarities ===
 
-All are [http://en.wikipedia.org/wiki/Visual_programming_languages visual programming languages].  [http://web.mit.edu/newsoffice/2010/android-abelson-0819.html Historically], Blockly was influenced by [http://en.wikipedia.org/wiki/App_inventor App Inventor], and App Inventor was influenced by Scratch, which was influenced by !StarLogo and Etoys.  
+All are [http://en.wikipedia.org/wiki/Visual_programming_languages visual programming languages].  [http://web.mit.edu/newsoffice/2010/android-abelson-0819.html Historically], Blockly was influenced by [http://en.wikipedia.org/wiki/App_inventor App Inventor], and App Inventor was influenced by Scratch, which was influenced by !StarLogo and Etoys.
 
 The progenitor of all of these was [http://en.wikipedia.org/wiki/Logo_(programming_language) Logo] (not itself a visual programming language), which was co-created by [http://en.wikipedia.org/wiki/Seymour_Papert Seymour Papert] after working with [http://en.wikipedia.org/wiki/Jean_Piaget Jean Piaget], one of the proponents of  [http://en.wikipedia.org/wiki/Constructivism_(learning_theory) constructivist learning theory].
 
@@ -43,7 +43,7 @@ Additionally, most of the high-level features would reside in the domain-specifi
 
 == Can Blockly import from code? ==
 
-Blockly can export from blocks to !JavaScript and Python.  However we have no plans to import from one of these languages to Blockly.  The main issue is that modern programming languages are fearsomely complex, with closures, list comprehension, operator overloading, etc.  Importing arbitrary code would have a high development cost compared with a limited real-world utility.
+Blockly can export from blocks to !JavaScript, Python, and Dart.  However we have no plans to import from one of these languages to Blockly.  The main issue is that modern programming languages are fearsomely complex, with closures, list comprehension, operator overloading, etc.  Importing arbitrary code would have a high development cost compared with a limited real-world utility.
 
 == Can I run Blockly without an Internet connection? ==
 

@@ -17,7 +17,7 @@ The following block creates the piece of text "hello" and stores it in the varia
 
 http://blockly.googlecode.com/svn/wiki/text-text.png
 
-The *create text with* block combines (concatenates) the value of the `greeting` variable and the new text "world" to create the text "helloworld".  Note that there is no space between them, since none was in either original text.  
+The *create text with* block combines (concatenates) the value of the `greeting` variable and the new text "world" to create the text "helloworld".  Note that there is no space between them, since none was in either original text.
 
 http://blockly.googlecode.com/svn/wiki/text-create.png
 
@@ -100,7 +100,7 @@ and ending with:
  * letter # from end
  * the last letter
 
-In the following example, "abc" is extracted. 
+In the following example, "abc" is extracted.
 
 http://blockly.googlecode.com/svn/wiki/text-get-substring.png
 
@@ -134,7 +134,7 @@ The *print* block causes the input value to be displayed in a pop-up window, as 
 
 http://blockly.googlecode.com/svn/wiki/text-print.png
 
-If the code is exported as Python or !JavaScript, it will be printed to the console (screen).  In no case is it sent to the printer, as the name might suggest.
+If the code is exported as !JavaScript, Python, or Dart, it will be printed to the console (screen).  In no case is it sent to the printer, as the name might suggest.
 
 ==Getting input from the user==
 
