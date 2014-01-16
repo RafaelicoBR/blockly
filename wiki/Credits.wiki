@@ -37,6 +37,10 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
 == Basque (eu) ==
  * xabierg@gmail.com
 
+== Belarusian (be-tarask) --
+ * [https://translatewiki.net/wiki/User:Jim-by Jim-by]
+ * [https://translatewiki.net/wiki/User:Wizardist Wizardist]
+
 == Breton (br) ==
  * [https://translatewiki.net/wiki/User:Fohanno Thierry Fohanno]
  * [https://translatewiki.net/wiki/User:Fulup Fulup]
