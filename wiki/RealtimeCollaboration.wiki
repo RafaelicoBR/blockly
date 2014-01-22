@@ -1,3 +1,59 @@
 #summary Support for realtime collaboration in Blockly.
+=== Introduction ===
+The Blockly library supports realtime collaboration of Blockly programs similar to realtime collaboration of documents in Google Drive, i.e. multiple users can edit the same program at the same time, with all the users seeing each others changes in real time.  
 
-TBD
+Using Blockly's realtime collaboration feature will provide your users with a sharable link which they can send to a friend or colleague.  That link contain the ID of a 'document' which is saved in Google Drive and stores the Blockly program that is being edited.  Note that this implies that using Blockly's realtime collaboration feature also provides for persistent storage of a Blockly program (as an alternative to the mechanism described in CloudStorageWithAppEngine) and therefore is useful even if you don't necessarily care about realtime collaboration.  Also note that another benefit of using the realtime collaboration feature will be the ability to 'undo' and 'redo' editing operations.  'Undo' and 'redo' are not currently supported due to a bug (in Blockly code) but hopefully that will soon be fixed.
+
+Blockly's realtime collaboration is built using [https://developers.google.com/drive/realtime/ Google Drive's Realtime API]: a service provided by Google that enables 3rd party developers to incorporate realtime collaboration into their own web applications.
+
+By default realtime collaboration is currently disabled in Blockly.  This wiki page tells you how to enable it.  Note that these instructions are for the developer using Blockly for their web application, not for the end user.
+
+There are two major steps to take in order to enable realtime collaboration in Blockly.  One is to [#Code_to_enable_realtime_collaboration put the appropriate code in your application].  The other is to use the [https://cloud.google.com/console/project Google Developer Console] to [Registering_with_the_Google_Developer_Console register your application] to use Google Drive's Realtime API.
+
+=== Code to enable realtime collaboration ===
+To enable realtime collaboration in your application's code insert the following near the beginning of your application's main page to load the necessary !JavaScript libraries:
+
+{{{
+<!-- Load the Google Drive SDK Realtime libraries. -->
+<script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+<!-- Load the generic Realtime utility library. -->
+<script type="text/javascript" src="../realtime/realtime-client-utils.js"></script>
+<!-- Load the Blockly apps realtime library. -->
+<script type="text/javascript" src="../realtime/realtime.js"></script>
+}}}
+
+and in the code which starts your web application put a call to `Blockly.Realtime.startRealtime()` with an argument specifying a function callback to continue your application's setup.  The call to `Blockly.Realtime.startRealtime()` should precede your app's call to `Blockly.inject()`, so typically the function you pass to `Blockly.Realtime.startRealtime()` will include the call to `Blockly.inject()`.  Here, for example, is the code in for this in [https://code.google.com/p/blockly/source/browse/trunk/tests/playground.html playground.html] in the Blockly Playground application (which is part of the standard Blockly test codebase):
+
+{{{
+function start() {
+  var startUi = function () {
+    var toolbox = document.getElementById('toolbox');
+    Blockly.inject(document.getElementById('blocklyDiv'),
+            {rtl: rtl, path: '../', toolbox: toolbox});
+  };
+
+  // Set up realtime collaboration.
+  // If you want to use the realtime collaboration features then uncomment out
+  // the next 2 lines and comment out the call to startUi() below.
+  document.getElementById("realtime").style.display = "block";
+  Blockly.Realtime.startRealtime(startUi);
+
+  // If you don't want to use the realtime collaboration features then uncomment
+  // out the next line and comment out the call to
+  // Blockly.Realtime.startRealtime() above it.  You can also comment out
+  // (or delete) the loading of the realtime related libraries up above in this
+  // case, if you want.
+//  startUi();
+}
+}}}
+
+You will also need to change the following line near the bottom of [https://code.google.com/p/blockly/source/browse/trunk/realtime/realtime.js realtime.js] to include the Client ID that you will obtain when registering your application in the Google Developers Console:
+
+{{{
+  clientId: 'INSERT YOUR CLIENT ID HERE',
+}}}
+
+You will replace `'INSERT YOUR CLIENT ID HERE'` with that ID (as a !JavaScript string).  That ID will look something like `'12345678901.apps.googlecontent.com'`
+
+=== Registering with the Google Developer Console ===
+To register your application with the Google Developers Console, please use the instructions that can be found in the [https://developers.google.com/drive/realtime/realtime-quickstart#step_1_activate_the_drive_api activation section of the Google Drive Realtime API Quickstart documentation].
