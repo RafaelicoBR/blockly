@@ -4,7 +4,9 @@ The Blockly library supports realtime collaboration of Blockly programs similar 
 
 Using Blockly's realtime collaboration feature will provide your users with a sharable link which they can send to a friend or colleague.  That link contain the ID of a 'document' which is saved in Google Drive and stores the Blockly program that is being edited.  Note that this implies that using Blockly's realtime collaboration feature also provides for persistent storage of a Blockly program (as an alternative to the mechanism described in CloudStorageWithAppEngine) and therefore is useful even if you don't necessarily care about realtime collaboration.  Also note that another benefit of using the realtime collaboration feature will be the ability to 'undo' and 'redo' editing operations.  'Undo' and 'redo' are not currently supported due to a bug (in Blockly code) but hopefully that will soon be fixed.
 
-Blockly's realtime collaboration is built using [https://developers.google.com/drive/realtime/ Google Drive's Realtime API]: a service provided by Google that enables 3rd party developers to incorporate realtime collaboration into their own web applications.
+Blockly's realtime collaboration is built using [https://developers.google.com/drive/realtime/ Google Drive's Realtime API]: a service provided by Google that enables 3rd party developers to incorporate realtime collaboration into their own web applications. 
+
+ _Note that Google Drive's Realtime API currently requires users to have (or create) Google Accounts, so please consider that when deciding to enable realtime collaboration into your app._
 
 By default realtime collaboration is currently disabled in Blockly.  This wiki page tells you how to enable it.  Note that these instructions are for the developer using Blockly for their web application, not for the end user.
 
@@ -57,3 +59,8 @@ You will replace `'INSERT YOUR CLIENT ID HERE'` with that ID (as a !JavaScript s
 
 === Registering with the Google Developer Console ===
 To register your application with the Google Developers Console, please use the instructions that can be found in the [https://developers.google.com/drive/realtime/realtime-quickstart#step_1_activate_the_drive_api activation section of the Google Drive Realtime API Quickstart documentation].
+
+=== Example ===
+Here's [https://blockly-realtime-collab.appspot.com/static/tests/playground.html a live demo of the Blockly Playground] enabled for realtime collaboration.  
+
+The first time you view it you may need to click the 'You must authorize' button.  A future version will streamline that process by incorporating the authorization into the page loading.
