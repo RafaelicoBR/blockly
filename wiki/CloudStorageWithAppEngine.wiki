@@ -7,6 +7,8 @@
 
 If your application is hosted on App Engine, a cloud storage service is available that allows users to save, load, share, and publish their programs.
 
+_Note that the RealtimeCollaboration feature provides an alternate way to save, load, share, and publish programs.  It does, however, currently require users to have a Google Account._
+
 == Setting up App Engine ==
 
 The first step is to get your own copy of Blockly running on App Engine.
