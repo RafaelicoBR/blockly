@@ -171,6 +171,9 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://translatewiki.net/wiki/User:Ty221 Tymon Radzik] 
  * Robert Posiadała
 
+== Piemontese (pms) ==
+ * [http://translatewiki.net/wiki/User:Borich%C3%A8t Borichèt]
+
 == Portuguese (pt-br) ==
  * [https://translatewiki.net/wiki/User:Prilopes Priscilla de Abreu Lopes]
  * [http://translatewiki.net/wiki/User:Luckas Luckas]
