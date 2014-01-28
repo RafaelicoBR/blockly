@@ -4,7 +4,7 @@
 
 = Introduction and Terminology =
 
-The *Control* category holds blocks that control whether other blocks placed in their *body* are run.  (For example, in the below "repeat" block, the body contains the "print" block and its input.)  There are two types of control blocks: IfElse (described on their own page) and these, which control how many times the body is run and, in some cases, the value of a variable used within the body.  These structures are called *loops* since the body is repeated (possibly) multiple times, reminiscent of a rope containing loops.    Each pass through the loop is called an *iteration*.  (How about our using the term "pass"?)  For more information, see [http://en.wikipedia.org/wiki/Control_flow#Loops].
+The *Control* category holds blocks that control whether other blocks placed in their *body* are run.  (For example, in the below "repeat" block, the body contains the "print" block and its input.)  There are two types of control blocks: IfElse (described on their own page) and these, which control how many times the body is run and, in some cases, the value of a variable used within the body.  These structures are called *loops* since the body is repeated (possibly) multiple times, reminiscent of a rope containing loops.    Each pass through the loop is called an *iteration*.  (How about our using the term "pass"?)  For more information, see [https://en.wikipedia.org/wiki/Control_flow#Loops].
 
 = Blocks for Loop Creation =
 
@@ -29,7 +29,7 @@ https://blockly.googlecode.com/svn/wiki/control-repeat-while.png
 
 When the loop completes, any subsequent blocks (not shown) would be run.  In our example, the loop would end after some number of random numbers in the range 1 to 6 had been printed, and the variable *total* would hold the sum of these numbers, which would be guaranteed to be at least 30.
 
-For more information, see [http://en.wikipedia.org/wiki/While_loop].
+For more information, see [https://en.wikipedia.org/wiki/While_loop].
 
 === repeat until ===
 
@@ -39,7 +39,7 @@ https://blockly.googlecode.com/svn/wiki/control-repeat-until.png
 
 == count with ==
 
-The *count with* block (called a [http://en.wikipedia.org/wiki/For_loop for loop] in most programming languages) advances a variable from the first value to the second value by the increment amount (third value), running the body once for each value.  For example, the following program prints the numbers 1, 3, and 5.
+The *count with* block (called a [https://en.wikipedia.org/wiki/For_loop for loop] in most programming languages) advances a variable from the first value to the second value by the increment amount (third value), running the body once for each value.  For example, the following program prints the numbers 1, 3, and 5.
 
 https://blockly.googlecode.com/svn/wiki/control-count-with.png
 
@@ -49,7 +49,7 @@ https://blockly.googlecode.com/svn/wiki/control-for-each-down.png
 
 == for each=
 
-The *for each* block (see [http://en.wikipedia.org/wiki/Foreach]) is similar, except instead of giving the loop variable values in a numeric sequence, it uses the values from a list in turn.  The following program prints each element of the list: "alpha", "beta", "gamma".
+The *for each* block (see [https://en.wikipedia.org/wiki/Foreach]) is similar, except instead of giving the loop variable values in a numeric sequence, it uses the values from a list in turn.  The following program prints each element of the list: "alpha", "beta", "gamma".
 
 https://blockly.googlecode.com/svn/wiki/control-for-each.png
 
@@ -59,7 +59,7 @@ Most loops run until the terminating condition (in the case of  *repeat* blocks)
 
 == continue with next iteration ==
 
-The *continue with next iteration* (called [http://en.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration continue] in most programming languages) causes the remaining code in the body to be skipped and for the next iteration (pass) of the loop to begin.
+The *continue with next iteration* (called [https://en.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration continue] in most programming languages) causes the remaining code in the body to be skipped and for the next iteration (pass) of the loop to begin.
 
 The following program prints "alpha" on the first iteration of the loop.  On the second iteration, the *continue with next iteration* block is run, skipping the printing of "beta".  On the final iteration, "gamma" is printed.
 
@@ -67,6 +67,6 @@ https://blockly.googlecode.com/svn/wiki/control-for-each-continue.png
 
 == break out of loop ==
 
-The *break out of loop* block provides [http://en.wikipedia.org/wiki/Control_flow#Early_exit_from_loops an early exit from a loop].  The following program prints "alpha" on the first iteration and "breaks out" of the loop on the second iteration when the loop variable is equal to "beta".  The third item in the list is never reached.
+The *break out of loop* block provides [https://en.wikipedia.org/wiki/Control_flow#Early_exit_from_loops an early exit from a loop].  The following program prints "alpha" on the first iteration and "breaks out" of the loop on the second iteration when the loop variable is equal to "beta".  The third item in the list is never reached.
 
 https://blockly.googlecode.com/svn/wiki/control-for-each-break.png

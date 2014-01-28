@@ -141,5 +141,5 @@ The XML may contain groups of blocks, or customized blocks.  Here are three bloc
 
 The XML for these groups or customized blocks is the same as Blockly's XML save format.
 Thus, the easiest way to construct the XML for such blocks is to use the
-[http://blockly-demo.appspot.com/static/apps/code/en.html Code application] to
+[https://blockly-demo.appspot.com/static/apps/code/en.html Code application] to
 build the blocks, then switch to the XML tab and copy the result.

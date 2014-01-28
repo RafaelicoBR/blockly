@@ -9,9 +9,9 @@ Our goal is for Blockly to be available in as many languages as possible, so stu
 = Using Blockly =
 
 If you're not already a Blockly user, try it out.  Some good starting places are:
- * [http://blockly-demo.appspot.com/blockly/apps/puzzle/index.html Puzzle] (to learn the Blockly user interface)
- * [http://blockly-demo.appspot.com/blockly/apps/maze/index.html Maze]
- * [http://blockly-demo.appspot.com/blockly/apps/code/index.html Code] (meant for experienced programmers)
+ * [https://blockly-demo.appspot.com/blockly/apps/puzzle/index.html Puzzle] (to learn the Blockly user interface)
+ * [https://blockly-demo.appspot.com/blockly/apps/maze/index.html Maze]
+ * [https://blockly-demo.appspot.com/blockly/apps/code/index.html Code] (meant for experienced programmers)
 
 = Translatewiki =
 

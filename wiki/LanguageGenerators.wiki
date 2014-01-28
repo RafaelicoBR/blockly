@@ -59,7 +59,7 @@ Another refinement is that `code` is added to the list of reserved words so that
 == Infinite Loops ==
 
 Although the resulting code is guaranteed to be syntactically correct at all times, it may contain infinite loops.
-Since solving the [http://en.wikipedia.org/wiki/Halting_problem Halting problem] is beyond Blockly's scope (!) the best approach for dealing with these cases is to maintain a counter and decrement it every time an iteration is performed.
+Since solving the [https://en.wikipedia.org/wiki/Halting_problem Halting problem] is beyond Blockly's scope (!) the best approach for dealing with these cases is to maintain a counter and decrement it every time an iteration is performed.
 To accomplish this, just set `Blockly.JavaScript.INFINITE_LOOP_TRAP` to a code snippet which will be inserted into every loop and every function.  Here is an example:
 
 {{{
@@ -70,4 +70,4 @@ To accomplish this, just set `Blockly.JavaScript.INFINITE_LOOP_TRAP` to a code s
 
 == Example ==
 
-Here is [http://blockly-demo.appspot.com/static/demos/fixed/index.html a live demo] of generating and executing !JavaScript.
+Here is [https://blockly-demo.appspot.com/static/demos/fixed/index.html a live demo] of generating and executing !JavaScript.

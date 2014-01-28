@@ -76,4 +76,4 @@ Adjust the paths as needed to enable inclusion of these script files.  Likewise,
 
 Test the page in a browser.  You should see Blockly's editor filling the iframe, with four block categories in the toolbox.
 
-Here is [http://blockly-demo.appspot.com/static/demos/iframe/index.html a live demo] of an iframe nested in a table that fills the screen.
+Here is [https://blockly-demo.appspot.com/static/demos/iframe/index.html a live demo] of an iframe nested in a table that fills the screen.

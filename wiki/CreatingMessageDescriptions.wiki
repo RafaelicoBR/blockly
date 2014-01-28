@@ -37,7 +37,7 @@ Blockly.MSG_DUPLICATE_BLOCK = goog.getMsg("Duplicate");
 Descriptions can contain [https://www.mediawiki.org/wiki/Help:Formatting wikitext], which will be properly displayed to the translator.  Specifically, you can include links to further information, as in this example:
 
 {{{
-/** @desc tooltip - how if statements work (see [http://code.google.com/p/blockly/wiki/If_Then]) */
+/** @desc tooltip - how if statements work (see [https://code.google.com/p/blockly/wiki/If_Then]) */
 Blockly.LANG_CONTROLS_IF_TOOLTIP_1 = goog.getMsg("If a value is true, then do some blocks");
 }}}
 

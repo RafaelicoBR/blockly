@@ -7,7 +7,7 @@ To access the *True False* Block, click *Logic*.
 || *true* || Useful when combined with another block, like the *Repeat* block, to tell the program to do something whenever a condition is true.||
 || *false* ||Useful when combined with another block, like the *Repeat* block, to tell the program to do something whenever a condition is true.||
 
-*Tip*: Combine the *True False* block with the [http://code.google.com/p/google-blockly/wiki/Repeat Repeat] block to write statements like:
+*Tip*: Combine the *True False* block with the [Repeat Repeat] block to write statements like:
 
  * *Repeat while* true.
  * *Repeat until* false.

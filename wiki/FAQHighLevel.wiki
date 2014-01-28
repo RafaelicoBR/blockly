@@ -11,9 +11,9 @@ These are the most frequently asked questions relating to the purpose of Blockly
 
 === Similarities ===
 
-All are [http://en.wikipedia.org/wiki/Visual_programming_languages visual programming languages].  [http://web.mit.edu/newsoffice/2010/android-abelson-0819.html Historically], Blockly was influenced by [http://en.wikipedia.org/wiki/App_inventor App Inventor], and App Inventor was influenced by Scratch, which was influenced by !StarLogo and Etoys.
+All are [https://en.wikipedia.org/wiki/Visual_programming_languages visual programming languages].  [http://web.mit.edu/newsoffice/2010/android-abelson-0819.html Historically], Blockly was influenced by [https://en.wikipedia.org/wiki/App_inventor App Inventor], and App Inventor was influenced by Scratch, which was influenced by !StarLogo and Etoys.
 
-The progenitor of all of these was [http://en.wikipedia.org/wiki/Logo_(programming_language) Logo] (not itself a visual programming language), which was co-created by [http://en.wikipedia.org/wiki/Seymour_Papert Seymour Papert] after working with [http://en.wikipedia.org/wiki/Jean_Piaget Jean Piaget], one of the proponents of  [http://en.wikipedia.org/wiki/Constructivism_(learning_theory) constructivist learning theory].
+The progenitor of all of these was [https://en.wikipedia.org/wiki/Logo_(programming_language) Logo] (not itself a visual programming language), which was co-created by [https://en.wikipedia.org/wiki/Seymour_Papert Seymour Papert] after working with [https://en.wikipedia.org/wiki/Jean_Piaget Jean Piaget], one of the proponents of [https://en.wikipedia.org/wiki/Constructivism_(learning_theory) constructivist learning theory].
 
 === Differences ===
 
@@ -51,7 +51,7 @@ Yes, although you won't be able to save programs for later use.  See [http://goo
 
 == Why isn't there an installer? ==
 
-Blockly is a technical preview aimed at application developers.  At this point it is not an end-user application.  Users who are not comfortable with syncing Subversion would most likely be disappointed in the current codebase.  They are encouraged, however, to use our [http://blockly-demo.appspot.com public server] or to [http://google.github.io/blockly/hoc.html download a version to run off-line].
+Blockly is a technical preview aimed at application developers.  At this point it is not an end-user application.  Users who are not comfortable with syncing Subversion would most likely be disappointed in the current codebase.  They are encouraged, however, to use our [https://blockly-demo.appspot.com public server] or to [http://google.github.io/blockly/hoc.html download a version to run off-line].
 
 == How can I get a young person started with programming? ==
 

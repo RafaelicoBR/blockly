@@ -6,14 +6,14 @@ This document provides what developers should know about Blockly translations.  
 
 = Introduction =
 
-Internationalization (i18n) is one of Blockly's top priorities.  See, for example, [https://neil.fraser.name/news/2013/03/16/ CS in VN].  Blockly supports right-to-left and left-to-right scripts, and the [http://blockly-demo.appspot.com/static/apps/puzzle/index.html Puzzle application] has been translated into over 50 languages.  We look forward to getting all of Blockly translated into that many languages.
+Internationalization (i18n) is one of Blockly's top priorities.  See, for example, [https://neil.fraser.name/news/2013/03/16/ CS in VN].  Blockly supports right-to-left and left-to-right scripts, and the [https://blockly-demo.appspot.com/static/apps/puzzle/index.html Puzzle application] has been translated into over 50 languages.  We look forward to getting all of Blockly translated into that many languages.
 
 = !TranslateWiki =
 We use [http://www.translatewiki.net TranslateWiki] as our translation console and translator community.  We provide them with the following files:
   * *qqq.json*, mapping message names to _message documentation_ (information for translators).
   * *en.json*, mapping message names to the English-language text.  Note that we use Canadian English.
   * *_LANG_.json*, mapping message names to the appropriate language text.  Messages that have not been translated to the given language will not be present in this file.
-_LANG_ is (loosely) an [http://en.wikipedia.org/wiki/IETF_language_tag IETF language tag], such as "de" for German or "pt-br" for Brazilian Portuguese.  See this [https://translatewiki.net/wiki/Special:SupportedLanguages incomplete list of languages supported by translatewiki].
+_LANG_ is (loosely) an [https://en.wikipedia.org/wiki/IETF_language_tag IETF language tag], such as "de" for German or "pt-br" for Brazilian Portuguese.  See this [https://translatewiki.net/wiki/Special:SupportedLanguages incomplete list of languages supported by translatewiki].
 
 !TranslateWiki gives us _LANG_.json files and sometimes a modified `qqq.json` files with improved messages.  All files are transferred through our repository, to which !TranslateWiki has access.  Our
 contact is Siebrand Mazeland.
@@ -217,7 +217,7 @@ Descriptions may be multiple lines, each of which is preceded by three slashes (
 
 Here is a sample definition:
 {{{
-/// dropdown - This finds the most common numbers ([http://en.wikipedia.org/wiki/Mode_(statistics) modes])
+/// dropdown - This finds the most common numbers ([https://en.wikipedia.org/wiki/Mode_(statistics) modes])
 /// in a list.  For example, the modes of the list {1, 3, 9, 3, 9}  are {3, 9}.
 Blockly.Msg.MATH_ONLIST_OPERATOR_MODE = 'modes of list';
 }}}

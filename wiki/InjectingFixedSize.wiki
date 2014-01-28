@@ -56,4 +56,4 @@ Finally, call the following to inject Blockly into an empty div.  Set 'path' to 
   </script>
 }}}
 
-Test the page in a browser.  You should see Blockly's editor filling the div, with four block categories in the toolbox.  Here is [http://blockly-demo.appspot.com/static/demos/fixed/index.html a live demo].
+Test the page in a browser.  You should see Blockly's editor filling the div, with four block categories in the toolbox.  Here is [https://blockly-demo.appspot.com/static/demos/fixed/index.html a live demo].

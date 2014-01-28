@@ -43,7 +43,7 @@ Mutation dialogs allow a user to explode a block into smaller sub-blocks and rec
   this.setMutator(new Blockly.Mutator(['controls_if_elseif', 'controls_if_else']));
 }}}
 
-http://blockly.googlecode.com/svn/wiki/controls_if.png
+https://blockly.googlecode.com/svn/wiki/controls_if.png
 
 The `setMutator` function takes one argument, a new Mutator.  The Mutator constructor takes one argument, a list of sub-blocks to show in the mutator's toolbox.  Creating a mutator for a sub-block is not advised at this time.
 

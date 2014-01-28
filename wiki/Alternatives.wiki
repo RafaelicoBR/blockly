@@ -17,4 +17,4 @@ Equally important is a negative characteristic:
 
 = Alternatives =
 
-Wikipedia currently lists about a hundred [http://en.wikipedia.org/wiki/Visual_programming_language visual programming environments].  Please check them out before choosing one.  Visual programming environments are still evolving quickly and as a community we are still learning what works and what doesn't.
+Wikipedia currently lists about a hundred [https://en.wikipedia.org/wiki/Visual_programming_language visual programming environments].  Please check them out before choosing one.  Visual programming environments are still evolving quickly and as a community we are still learning what works and what doesn't.

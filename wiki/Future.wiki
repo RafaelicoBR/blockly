@@ -9,7 +9,7 @@ Blockly is in active development with changes landing every day.  We are aware o
 
 It is important that everyone be able to use Blockly.  That means running in as many environments as possible:
 
- * [Translation Translating Blockly] (or just some demo apps) into your language is extremely helpful.  Less that 5% of the world [http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers speaks English] natively.  Help us reach the billions of people who are missing out.
+ * [Translation Translating Blockly] (or just some demo apps) into your language is extremely helpful.  Less that 5% of the world [https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers speaks English] natively.  Help us reach the billions of people who are missing out.
  * Touch screen support (for Android and iOS tablets in particular) is critical.  Currently Blockly kinda-sorta works, but we need to do much better.
  * Good support for IE 10 and IE 9 (IE 8 is assumed to be a lost cause).  The Google developers do not have easy access to Windows computers, so any help to improve IE is appreciated.
 

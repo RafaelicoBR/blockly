@@ -59,7 +59,7 @@ The files which are going to be modified are *turtle.js*, *blocks.js*, and *temp
 
 Let's start by designing the block itself. Open the online block designer. This designer helps to define how the new block will look and function.
 
-Open this link: http://blockly-demo.appspot.com/static/apps/blockfactory/index.html
+Open this link: https://blockly-demo.appspot.com/static/apps/blockfactory/index.html
 
 Design the block as per this layout:
 

@@ -155,7 +155,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  *[https://translatewiki.net/wiki/User:Anakmalaysia AnakMalaysia]
 
 == Nepali (ne) ==
- * [http://en.wikipedia.org/wiki/ne:User:%E0%A4%B8%E0%A4%B0%E0%A5%8B%E0%A4%9C_%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0_%E0%A4%A2%E0%A4%95%E0%A4%BE%E0%A4%B2 Saroj Kumar Dhakal]
+ * [https://en.wikipedia.org/wiki/ne:User:%E0%A4%B8%E0%A4%B0%E0%A5%8B%E0%A4%9C_%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0_%E0%A4%A2%E0%A4%95%E0%A4%BE%E0%A4%B2 Saroj Kumar Dhakal]
 
 == Pashto (ps) ==
  * [https://translatewiki.net/wiki/User:Ahmed-Najib-Biabani-Ibrahimkhel Ahmed Najib Biabani Ibrahimkhel]

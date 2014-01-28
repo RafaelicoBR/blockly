@@ -11,10 +11,10 @@ To access the *Repeat* Block, click *Control*.
 
 *Tip*: To make useful sentences, combine the *If Then* block with these other blocks:
 
- * [http://code.google.com/p/google-blockly/wiki/Wall Wall] 
- * [http://code.google.com/p/google-blockly/wiki/True_False True_False] 
- * [http://code.google.com/p/google-blockly/wiki/Move Move]
- * [http://code.google.com/p/google-blockly/wiki/Turn Turn]
+ * [Wall Wall] 
+ * [True_False True_False] 
+ * [Move Move]
+ * [Turn Turn]
 
 You can write statements like:
 

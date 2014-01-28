@@ -4,7 +4,7 @@
 
 = Introduction =
 
-[http://en.wikipedia.org/wiki/Boolean_algebra Boolean algebra] is a mathematical system that has two values:
+[https://en.wikipedia.org/wiki/Boolean_algebra Boolean algebra] is a mathematical system that has two values:
  * *true*
  * *false*
 
@@ -14,7 +14,7 @@ Boolean values (also called _conditions_) are used in these control block, which
 
 One of the many examples from those pages is:
 
-http://blockly.googlecode.com/svn/wiki/if-else.png
+https://blockly.googlecode.com/svn/wiki/if-else.png
 
 If the value of the variable *x* is greater than 100, the condition is *true*, and the text "What a big number!" is printed.  If the value of *x* is not greater than 100, the condition is *false*, and "That's not very big." is printed.
 

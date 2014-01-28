@@ -31,7 +31,7 @@ Once Blockly is uploaded you can point a browser to the URL you created in step 
 
 == Talking to the Cloud ==
 
-Examine the source of the [http://blockly-share.appspot.com/static/demos/storage/index.html storage demo] at [https://code.google.com/p/blockly/source/browse/trunk/demos/storage/index.html demos/storage/index.html] and note the following features.  First, there is a script include that loads the cloud storage API:
+Examine the source of the [https://blockly-demo.appspot.com/static/demos/storage/index.html storage demo] at [https://code.google.com/p/blockly/source/browse/trunk/demos/storage/index.html demos/storage/index.html] and note the following features.  First, there is a script include that loads the cloud storage API:
 
 {{{
   <script type="text/javascript" src="/storage.js"></script>
@@ -79,4 +79,4 @@ To automatically backup the blocks into local storage when the user leaves the p
 
 == Example ==
 
-Here is [http://blockly-demo.appspot.com/static/demos/storage/index.html a live demo] of cloud storage.
+Here is [https://blockly-demo.appspot.com/static/demos/storage/index.html a live demo] of cloud storage.
