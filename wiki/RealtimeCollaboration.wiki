@@ -13,41 +13,21 @@ By default realtime collaboration is currently disabled in Blockly.  This wiki p
 There are two major steps to take in order to enable realtime collaboration in Blockly.  One is to [#Code_to_enable_realtime_collaboration put the appropriate code in your application].  The other is to use the [https://cloud.google.com/console/project Google Developer Console] to [Registering_with_the_Google_Developer_Console register your application] to use Google Drive's Realtime API.
 
 === Code to enable realtime collaboration ===
-To enable realtime collaboration in your application's code insert the following near the beginning of your application's main page to load the necessary !JavaScript libraries:
-
-{{{
-<!-- Load the Google Drive SDK Realtime libraries. -->
-<script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
-<!-- Load the generic Realtime utility library. -->
-<script type="text/javascript" src="../realtime/realtime-client-utils.js"></script>
-<!-- Load the Blockly apps realtime library. -->
-<script type="text/javascript" src="../realtime/realtime.js"></script>
-}}}
-
-and in the code which starts your web application put a call to `Blockly.Realtime.startRealtime()` with an argument specifying a function callback to continue your application's setup.  The call to `Blockly.Realtime.startRealtime()` should precede your app's call to `Blockly.inject()`, so typically the function you pass to `Blockly.Realtime.startRealtime()` will include the call to `Blockly.inject()`.  Here, for example, is the code in for this in [https://code.google.com/p/blockly/source/browse/trunk/tests/playground.html playground.html] in the Blockly Playground application (which is part of the standard Blockly test codebase):
+To enable realtime collaboration in your application's code add a 'realtime: true' option to your Blockly.inject() method call.  There are also a set of 'realtimeOptions: ...' that you can add, as well.  Here, for example, is the code in for this in [https://code.google.com/p/blockly/source/browse/trunk/tests/playground.html playground.html] in the Blockly Playground application (which is part of the standard Blockly test codebase):
 
 {{{
 function start() {
-  var startUi = function () {
-    var toolbox = document.getElementById('toolbox');
-    Blockly.inject(document.getElementById('blocklyDiv'),
-            {rtl: rtl, path: '../', toolbox: toolbox});
-  };
-
-  // Set up realtime collaboration.
-  // If you want to use the realtime collaboration features then uncomment out
-  // the next 2 lines and comment out the call to startUi() below.
-  document.getElementById("realtime").style.display = "block";
-  Blockly.Realtime.startRealtime(startUi);
-
-  // If you don't want to use the realtime collaboration features then uncomment
-  // out the next line and comment out the call to
-  // Blockly.Realtime.startRealtime() above it.  You can also comment out
-  // (or delete) the loading of the realtime related libraries up above in this
-  // case, if you want.
-//  startUi();
+  var toolbox = document.getElementById('toolbox');
+  Blockly.inject(document.getElementById('blocklyDiv'),
+          {rtl: rtl, path: '../', toolbox: toolbox, realtime: false,
+            realtimeOptions: {chatbox: {elementId: 'chatbox'}}});
+  if (Blockly.Realtime.isEnabled()) {
+    enableRealtimeSpecificUi();
+  }
 }
 }}}
+
+The 'chatbox' option is used if you want to have a collaborative chat in you app.  Within that option you must specify an 'elementId' suboption which tells the realtime code the id of a textarea that is defined in your app and which will be used for the chat.  You can also specify the initial text to be placed in your chatbox by adding an 'initText' suboption.  If you don't specify an 'initText' it sill default to the value of Blockly.Msg.CHAT, which has the value _'Chat with your collaborator by typing in this box!'_ for english users but can be localized.
 
 You will also need to change the following line near the bottom of [https://code.google.com/p/blockly/source/browse/trunk/realtime/realtime.js realtime.js] to include the Client ID that you will obtain when registering your application in the Google Developers Console:
 
