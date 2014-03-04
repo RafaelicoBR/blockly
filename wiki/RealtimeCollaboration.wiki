@@ -19,8 +19,10 @@ To enable realtime collaboration in your application's code add a 'realtime: tru
 function start() {
   var toolbox = document.getElementById('toolbox');
   Blockly.inject(document.getElementById('blocklyDiv'),
-          {rtl: rtl, path: '../', toolbox: toolbox, realtime: false,
-            realtimeOptions: {chatbox: {elementId: 'chatbox'}}});
+          {rtl: rtl, path: '../', toolbox: toolbox, realtime: true,
+           realtimeOptions:
+            {clientId: 'YOUR CLIENT ID GOES HERE',
+             chatbox: {elementId: 'chatbox'}}});
   if (Blockly.Realtime.isEnabled()) {
     enableRealtimeSpecificUi();
   }
@@ -29,13 +31,7 @@ function start() {
 
 The 'chatbox' option is used if you want to have a collaborative chat in you app.  Within that option you must specify an 'elementId' suboption which tells the realtime code the id of a textarea that is defined in your app and which will be used for the chat.  You can also specify the initial text to be placed in your chatbox by adding an 'initText' suboption.  If you don't specify an 'initText' it sill default to the value of Blockly.Msg.CHAT, which has the value _'Chat with your collaborator by typing in this box!'_ for english users but can be localized.
 
-You will also need to change the following line near the bottom of [https://code.google.com/p/blockly/source/browse/trunk/realtime/realtime.js realtime.js] to include the Client ID that you will obtain when registering your application in the Google Developers Console:
-
-{{{
-  clientId: 'INSERT YOUR CLIENT ID HERE',
-}}}
-
-You will replace `'INSERT YOUR CLIENT ID HERE'` with that ID (as a !JavaScript string).  That ID will look something like `'12345678901.apps.googlecontent.com'`
+The clientId string (i.e  'INSERT YOUR CLIENT ID HERE') needs to be replaced by the Client ID that you will obtain when registering your application in the Google Developers Console.  That ID should look something like `'12345678901.apps.googlecontent.com'`
 
 === Registering with the Google Developer Console ===
 To register your application with the Google Developers Console, please use the instructions that can be found in the [https://developers.google.com/drive/realtime/realtime-quickstart#step_1_activate_the_drive_api activation section of the Google Drive Realtime API Quickstart documentation].
