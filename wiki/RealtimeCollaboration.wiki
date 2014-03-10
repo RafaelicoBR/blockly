@@ -37,6 +37,6 @@ The clientId string (i.e  'INSERT YOUR CLIENT ID HERE') needs to be replaced by 
 To register your application with the Google Developers Console, please use the instructions that can be found in the [https://developers.google.com/drive/realtime/realtime-quickstart#step_1_activate_the_drive_api activation section of the Google Drive Realtime API Quickstart documentation].
 
 === Example ===
-Here's [https://blockly-realtime-collab.appspot.com/static/tests/playground.html a live demo of the Blockly Playground] enabled for realtime collaboration.  
+Here's [https://blockly-realtime-collab.appspot.com/static/demos/realtime/index.html a simple live demo] of Blockly realtime collaboration in action.  For something more extensive, here's [https://blockly-realtime-collab.appspot.com/static/tests/playground.html a live demo of the Blockly Playground] enabled for realtime collaboration.  
 
-The first time you view it you may need to click the 'You must authorize' button.  A future version will streamline that process by incorporating the authorization into the page loading.
+The first time you view them you may need to click the 'You must authorize' button.
