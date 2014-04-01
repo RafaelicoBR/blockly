@@ -18,13 +18,13 @@ crafted by linguists over the course of decades.  The Klingon language has a
 complicated grammar that is completely unique.
 
 Consider word order.  English follows the Subject-Verb-Object order ("The cat
-eats the food.").  Hungarian follows the Object-Subject-Verb order ("The cat the
-food eats.").  Hebrew follows the Verb-Subject-Object order ("Eats the cat the food.").
-Klingon is the most bizarre, with Object-Verb-Subject order ("The food eats the cat.").
-Supporting Klingon is the ultimate test of how flexible Blockly is.  Block inputs
-need to be reordered, suffix groups need to be added, rules for plurals need to be
-rethought.  Infrastructure improvements made during the course of translating to
-Klingon help us support all languages.
+eats the food.").  Hungarian follows the Object-Subject-Verb order ("The food
+the cat eats.").  Hebrew follows the Verb-Subject-Object order ("Eats the cat
+the food.").  Klingon is the most bizarre, with Object-Verb-Subject order ("The
+food eats the cat."). Supporting Klingon is the ultimate test of Blockly's
+flexibility.  Block inputs need to be reordered, suffix groups need to be added,
+rules for plurals need to be rethought.  Infrastructure improvements made during
+the course of translating to Klingon help us support all languages.
 
 == Who? ==
 
@@ -33,13 +33,13 @@ might expect (and we are hiring).  Google's Klingon language group maintains
 a style guide for terminology so that different applications use a consistent
 vocabulary.
 
-We are always pleased when volunteers come forward to contribute new translations
-or corrections -- whether for Klingon, or other languages.
+We are always pleased when volunteers come forward to contribute new
+translations or corrections -- whether for Klingon, or other languages.
 
 == How? ==
 
-Most of [Translation Blockly's translations] are done by volunteers using Translatewiki.
-Unfortunately, Klingon is not in their language matrix.
+Most of [Translation Blockly's translations] are done by volunteers using
+Translatewiki.  Unfortunately, Klingon is not in their language matrix.
 As a result, Klingon contributors need to edit two files manually:
 
 https://code.google.com/p/blockly/source/browse/trunk/msg/json/tlh.json
@@ -48,10 +48,12 @@ and
 
 https://code.google.com/p/blockly/source/browse/trunk/apps/json/tlh.json
 
-See the `en.json` files in each directory for the English phrases, and the `qqq.json`
-files for descriptions.  We actively do not want tooltip messages translated since they
+See the `en.json` files in each directory for the English phrases (including
+those not yet translated to Klingon), and the `qqq.json` files for descriptions.
+We actively do not want tooltip messages or help URLs translated since they
 offer useful context for those new to Klingon.
 
-All code _must_ be manually translated.  Bing Translate produces such translations
-as `"Library" -> "be'nI''a'wI', Datu'"` which actually means `"discover my big sister"`.
+All phrases _must_ be manually translated.  Bing Translate produces such
+translations as `"Library" -> "be'nI''a'wI', Datu'"` which actually means
+`"discover my big sister"`.
 Clearly this would be an inadvisable phrase to use in a Klingon environment.
