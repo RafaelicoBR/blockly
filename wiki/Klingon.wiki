@@ -1,7 +1,9 @@
 #summary Blockly in Klingon.
 
+On 1 April 2014 we released a
+[https://blockly-demo.appspot.com/static/apps/code/index.html?lang=tlh#ortpyd Klingon translation of Blockly].
 Klingon is an unusual choice for a translation, and on this page we wanted to
-give some context on the hows and whys.
+give some context on the hows and whys, as well as how you can help.
 
 == Why? ==
 
@@ -36,7 +38,7 @@ or corrections -- whether for Klingon, or other languages.
 
 == How? ==
 
-Most of Blockly's translation are done by volunteers using Translatewiki.
+Most of [Translation Blockly's translations] are done by volunteers using Translatewiki.
 Unfortunately, Klingon is not in their language matrix.
 As a result, Klingon contributors need to edit two files manually:
 
@@ -46,7 +48,7 @@ and
 
 https://code.google.com/p/blockly/source/browse/trunk/apps/json/tlh.json
 
-See the en.json files in each directory for the English phrases, and the qqq.json
+See the `en.json` files in each directory for the English phrases, and the `qqq.json`
 files for descriptions.  We actively do not want tooltip messages translated since they
 offer useful context for those new to Klingon.
 
