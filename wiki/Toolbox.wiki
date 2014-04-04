@@ -143,3 +143,19 @@ The XML for these groups or customized blocks is the same as Blockly's XML save 
 Thus, the easiest way to construct the XML for such blocks is to use the
 [https://blockly-demo.appspot.com/static/apps/code/en.html Code application] to
 build the blocks, then switch to the XML tab and copy the result.
+
+== Changing the Toolbox ==
+
+The application may change the blocks available in the toolbox at any time with a single function call:
+{{{
+  Blockly.updateToolbox(newTree);
+}}}
+
+As was the case during initial configuration, `newTree` may either be a tree of nodes, or a string representation.  The only restriction is that the mode cannot be changed; that is if there were categories in the initially-defined toolbox then the new toolbox must also have categories (though the categories may change).  Likewise, if the initially-defined toolbox did not have any categories, then the new toolbox may not have any categories.
+
+Be aware that at this time updating the toolbar causes some minor UI resets:
+ * In a toolbox with categories, the flyout will close if it was open.
+ * In a toolbox without categories, any fields changed by the user (such as a dropdown) will revert to the default.
+ * Any toolbox so long that it extends beyond the page will have its scrollbar jump to the top.
+
+Here is [https://blockly-demo.appspot.com/static/demos/toolbox/index.html a live demo] of a tree with categories and block groups.
