@@ -130,6 +130,10 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * Keita Oda
  * [https://translatewiki.net/wiki/User:Shirayuki Shirayuki (しらゆき)]
 
+== Klingon (tlh) ==
+ * David Yonge-Mallo (De'vID)
+ * Neil Fraser
+
 == Korean (ko) ==
  * [https://translatewiki.net/wiki/User:%EC%95%84%EB%9D%BC 아라 (Ara)]
  * [https://translatewiki.net/wiki/User:Hym411 레비(Revi)]
@@ -168,7 +172,7 @@ Siebrand Mazeland helped immensely by setting us up at http://translatewiki.net,
  * [http://translatewiki.net/wiki/User:Chrumps Chrumps]
  * [http://translatewiki.net/wiki/User:Faren Faren]
  * [http://translatewiki.net/wiki/User:Rezonansowy Rezonansowy]
- * [http://translatewiki.net/wiki/User:Ty221 Tymon Radzik] 
+ * [http://translatewiki.net/wiki/User:Ty221 Tymon Radzik]
  * Robert Posiadała
 
 == Piemontese (pms) ==
