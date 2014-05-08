@@ -1,0 +1,7 @@
+#summary Templates to ease block creation
+
+*This describes work in progress.  Use of this functionality is not yet recommended.*
+
+= Introduction =
+
+[https://code.google.com/p/blockly/wiki/Tutorial_CreateYourFirstBlock  Creating new blocks in JavaScript] can be repetitive and error-prone, especially if the blocks have [https://code.google.com/p/blockly/wiki/CreatingMutators mutators].  The purpose of the block template system is to enable new blocks to be added with less work and worry.
