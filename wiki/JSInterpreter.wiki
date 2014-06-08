@@ -86,7 +86,7 @@ Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
 Blockly.JavaScript.addReservedWords('highlightBlock');
 }}}
 
-This results in the `highlight('123');` being added to before every statement, where `123` is the serial number of the block to be highlighted.  Then create the API for the highlighting function:
+This results in the statement `highlight('123');` being added to before every statement, where `123` is the serial number of the block to be highlighted.  Then create the API for the highlighting function:
 
 {{{
 function initApi(interpreter, scope) {
