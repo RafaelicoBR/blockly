@@ -1,4 +1,5 @@
-#summary Information for users and translators about "if", "else if", and "else" blocks.
+#summary User documentation for "if", "else if", and "else" blocks.
+#labels Block-Docs
 
 <wiki:toc max_depth="2" />
 

@@ -1,4 +1,5 @@
-#summary Information about variables for users and translators.
+#summary User documentation for "variable" blocks.
+#labels Block-Docs
 
 <wiki:toc max_depth="2" />
 
@@ -40,7 +41,7 @@ The *get* block provides the value stored in a variable, without changing it.
 
 https://blockly.googlecode.com/svn/wiki/variables-get-variable.png
 
-It is possible, but a bad idea, to write a program in which a *get* appears without a corresponding *set*. 
+It is possible, but a bad idea, to write a program in which a *get* appears without a corresponding *set*.
 
 =Example=
 

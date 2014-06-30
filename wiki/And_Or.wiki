@@ -1,4 +1,4 @@
-#labels Logic
+#labels Block-Docs
 =The *And Or* Block=
 
 To access the *And Or* Block, click *Logic*.

@@ -1,4 +1,5 @@
-#summary Information about Boolean logic blocks.
+#summary User documentation for Boolean logic blocks.
+#labels Block-Docs
 
 <wiki:toc max_depth="2" />
 

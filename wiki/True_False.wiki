@@ -1,4 +1,5 @@
-#labels Logic
+#summary User documentation for "true/false" blocks.
+#labels Block-Docs
 =The *True False* Block=
 
 To access the *True False* Block, click *Logic*.

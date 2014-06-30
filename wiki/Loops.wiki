@@ -1,4 +1,5 @@
-#summary Documentation of control loop blocks for translators and users.
+#summary User documentation for "loop" blocks.
+#labels Block-Docs
 
 <wiki:toc max_depth="3" />
 

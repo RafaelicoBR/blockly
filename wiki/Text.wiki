@@ -1,4 +1,5 @@
-#summary Brief explanations of Blockly's text blocks
+#summary User documentation for "text" blocks.
+#labels Block-Docs
 
 <wiki:toc max_depth="3" />
 

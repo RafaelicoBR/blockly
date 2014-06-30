@@ -1,4 +1,5 @@
-#summary Description of Blockly "list" blocks for translators and users
+#summary User documentation for "list" blocks.
+#labels Block-Docs
 
 <wiki:toc max_depth="3" />
 
