@@ -1,3 +1,4 @@
+#summary User documentation for "and/or" blocks.
 #labels Block-Docs
 =The *And Or* Block=
 

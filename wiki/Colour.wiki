@@ -1,5 +1,5 @@
+#summary User documentation of colour blocks.
 #labels Block-Docs
-#summary Documentation of colour blocks
 
 <wiki:toc max_depth="2" />
 
