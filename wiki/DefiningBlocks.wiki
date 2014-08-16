@@ -38,7 +38,7 @@ The `init` function creates the block's shape.  In the context of this function 
   * [#setOutput setOutput]
   * [#setPreviousStatement setPreviousStatement]
   * [#setNextStatement setNextStatement]
-  * [#appendInput appendDummyInput, appendValueInput, appendStatementInput ]
+  * [#appendDummyInput,_appendValueInput,_appendStatementInput appendDummyInput, appendValueInput, appendStatementInput ]
     * [#setCheck setCheck]
     * [#setAlign setAlign]
     * [#appendField appendField]
