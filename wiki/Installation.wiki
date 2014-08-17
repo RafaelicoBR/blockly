@@ -31,6 +31,8 @@ With your installation of Blockly verified as working, inject Blockly into a web
 
 The `Blockly.inject` line contains as its second argument a dictionary of name-value pairs.  These are used for configuration.  The following options are supported:
 || `collapse:` || boolean || Allows blocks to be collapsed or expanded.  Defaults to `true` if the toolbox has categories, `false` otherwise. ||
+|| `comments:` || boolean || Allows blocks to have comments.  Defaults to `true` if the toolbox has categories, `false` otherwise. ||
+|| `disable:` || boolean || Allows blocks to be disabled.  Defaults to `true` if the toolbox has categories, `false` otherwise. ||
 || `maxBlocks:` || number || Maximum number of blocks that may be created.  Useful for student exercises. Defaults to `Infinity`. ||
 || `path:` || string || Path from page (or frame) to the Blockly root directory. Defaults to `"./"`. ||
 || `readOnly:` || boolean || If `true`, prevent the user from editing.  Supresses the toolbox and trashcan.  Defaults to `false`. ||
