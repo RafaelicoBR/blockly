@@ -70,4 +70,4 @@ To accomplish this, just set `Blockly.JavaScript.INFINITE_LOOP_TRAP` to a code s
 
 == Example ==
 
-Here is [https://blockly-demo.appspot.com/static/demos/fixed/index.html a live demo] of generating and executing !JavaScript.
+Here is [https://blockly-demo.appspot.com/static/demos/generator/index.html a live demo] of generating and executing !JavaScript.
