@@ -68,6 +68,10 @@ To accomplish this, just set `Blockly.JavaScript.INFINITE_LOOP_TRAP` to a code s
   var code = Blockly.JavaScript.workspaceToCode();
 }}}
 
+== JS Interpreter ==
+
+Instead of using `eval`, a completely different way to run !JavaScript code is to use a [JSInterpreter JavaScript Interpreter].  This allows for step-by-step execution at any speed.  Blocks may be highlighted as they are executed.  Infinite loops are no longer an issue.  Security is guaranteed.  The JS Interpreter is recommended for any non-trivial applications.
+
 == Example ==
 
 Here is [https://blockly-demo.appspot.com/static/demos/generator/index.html a live demo] of generating and executing !JavaScript.
