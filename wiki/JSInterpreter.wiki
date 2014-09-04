@@ -5,7 +5,7 @@
 
 == Eval is Evil ==
 
-The quickest way to run your user's blocks is to generate !JavaScript, then push the resulting code through the browser's `eval()` function.  This works very well for many simple applications.  The [Language Generators] page describes how to do this, along with a couple of hacks such as how to deal with infinite loops and how not to collide with existing variables.
+The quickest way to run your user's blocks is to generate !JavaScript, then push the resulting code through the browser's `eval()` function.  This works very well for many simple applications.  The [LanguageGenerators Language Generators] page describes how to do this, along with a couple of hacks such as how to deal with infinite loops and how not to collide with existing variables.
 
 However, if you are serious about running the user's blocks properly, then the [https://github.com/NeilFraser/JS-Interpreter JS Interpreter] is the way to go.  This project is separate from Blockly, but was specifically written for Blockly.
 
