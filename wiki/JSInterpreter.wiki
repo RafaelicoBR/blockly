@@ -1,7 +1,7 @@
 #summary JavaScript Interpreter.
 #labels Phase-Deploy
 
-*[Installation Installation]: [Language Generators]: !JavaScript Interpreter*
+*[Installation Installation]: [LanguageGenerators Language Generators]: !JavaScript Interpreter*
 
 == Eval is Evil ==
 
