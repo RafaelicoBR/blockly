@@ -1,16 +1,7 @@
 #summary User documentation for "true/false" blocks.
-#labels Block-Docs
-=The *True False* Block=
 
-To access the *True False* Block, click *Logic*.
+= Blockly has moved! =
 
-|| *Option* || *Description* ||
-|| *true* || Useful when combined with another block, like the *Repeat* block, to tell the program to do something whenever a condition is true.||
-|| *false* ||Useful when combined with another block, like the *Repeat* block, to tell the program to do something whenever a condition is true.||
+This page is now here:
 
-*Tip*: Combine the *True False* block with the [Repeat Repeat] block to write statements like:
-
- * *Repeat while* true.
- * *Repeat until* false.
-
-*Note*: The *True False* block fits with other blocks, like the *And Or* block, that it might not be useful with.
+https://github.com/google/blockly/wiki/Logic
